@@ -1,0 +1,1317 @@
+Component: ARM Compiler 5.06 update 3 (build 300) Tool: armlink [4d35c9]
+
+==============================================================================
+
+Section Cross References
+
+    normal_display.o(i.All_Off) refers to normal_display.o(i.All_Color) for All_Color
+    normal_display.o(i.All_Off) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Blink) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    normal_display.o(i.Blink) refers to rand.o(.text) for srand
+    normal_display.o(i.Blink) refers to rand.o(.emb_text) for rand
+    normal_display.o(i.Blink) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Blink) refers to display_ctrl.o(.data) for TempLed
+    normal_display.o(i.Blink) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Blink) refers to display_ctrl.o(.data) for ColorNum
+    normal_display.o(i.Blink) refers to display_ctrl.o(.bss) for ColorData
+    normal_display.o(i.Blink) refers to display_ctrl.o(.data) for TempColor
+    normal_display.o(i.Blink) refers to display_ctrl.o(.bss) for ModeTime
+    normal_display.o(i.Blink) refers to display_ctrl.o(.bss) for HoldTime
+    normal_display.o(i.Blink) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Blue_Flash) refers to normal_display.o(i.All_Color) for All_Color
+    normal_display.o(i.Blue_Flash) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Blue_Flash) refers to display_ctrl.o(.data) for TempR
+    normal_display.o(i.Blue_Flash) refers to display_ctrl.o(.data) for TempG
+    normal_display.o(i.Blue_Flash) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Blue_Flash) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Blue_Flash) refers to display_ctrl.o(.data) for TempB
+    normal_display.o(i.Color_Show) refers to normal_display.o(i.All_Color) for All_Color
+    normal_display.o(i.Color_Show) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.data) for TempR
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.data) for TempG
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.data) for TempB
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.data) for HorseOrder
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.bss) for ModeTime
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.data) for HorseCnt
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.data) for HorseWaitTime
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.data) for TempLed
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.bss) for HoldTime
+    normal_display.o(i.Color_Show) refers to data_process.o(.data) for SynFlag
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.data) for HorseStep
+    normal_display.o(i.Color_Show) refers to display_ctrl.o(.data) for ModeSynFlag
+    normal_display.o(i.Direct_Set) refers to normal_display.o(i.All_Color) for All_Color
+    normal_display.o(i.Direct_Set) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Direct_Set) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Direct_Set) refers to display_ctrl.o(.data) for TempR
+    normal_display.o(i.Direct_Set) refers to display_ctrl.o(.data) for TempG
+    normal_display.o(i.Direct_Set) refers to display_ctrl.o(.data) for TempB
+    normal_display.o(i.Direct_Set) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Direct_Set) refers to display_ctrl.o(.data) for HorseStep
+    normal_display.o(i.Direct_Set) refers to display_ctrl.o(.data) for TempLed
+    normal_display.o(i.Flower_Bloom) refers to normal_display.o(i.All_Color) for All_Color
+    normal_display.o(i.Flower_Bloom) refers to rand.o(.text) for srand
+    normal_display.o(i.Flower_Bloom) refers to rand.o(.emb_text) for rand
+    normal_display.o(i.Flower_Bloom) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for TempR
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for HorseOrder
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for ModeSynFlag
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for TempLed
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.bss) for HoldTime
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.bss) for ModeTime
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for LedCnt
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for HorseWaitTime
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for HorseStep
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for HorseCnt
+    normal_display.o(i.Flower_Bloom) refers to data_process.o(.data) for SynFlag
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for TempG
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for TempB
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for TempColor
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.bss) for ColorData
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for FadeR
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for FadeG
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for FadeB
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for ColorNum
+    normal_display.o(i.Flower_Bloom) refers to display_ctrl.o(.data) for HorseTotal
+    normal_display.o(i.Green_Flash) refers to normal_display.o(i.All_Color) for All_Color
+    normal_display.o(i.Green_Flash) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Green_Flash) refers to display_ctrl.o(.data) for TempR
+    normal_display.o(i.Green_Flash) refers to display_ctrl.o(.data) for TempB
+    normal_display.o(i.Green_Flash) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Green_Flash) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Green_Flash) refers to display_ctrl.o(.data) for TempG
+    normal_display.o(i.Horse_Whole_Test) refers to normal_display.o(i.All_Color) for All_Color
+    normal_display.o(i.Horse_Whole_Test) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Horse_Whole_Test) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Horse_Whole_Test) refers to display_ctrl.o(.data) for HorseWaitTime
+    normal_display.o(i.Horse_Whole_Test) refers to display_ctrl.o(.data) for TempR
+    normal_display.o(i.Horse_Whole_Test) refers to display_ctrl.o(.data) for TempG
+    normal_display.o(i.Horse_Whole_Test) refers to display_ctrl.o(.data) for TempB
+    normal_display.o(i.Horse_Whole_Test) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Horse_Whole_Test) refers to display_ctrl.o(.data) for HorseStep
+    normal_display.o(i.Horse_Whole_Test) refers to display_ctrl.o(.data) for HorseOrder
+    normal_display.o(i.Horse_Whole_Test) refers to display_ctrl.o(.data) for TempLed
+    normal_display.o(i.Horse_Whole_Test) refers to display_ctrl.o(.data) for HorseTotal
+    normal_display.o(i.Instead) refers to rand.o(.text) for srand
+    normal_display.o(i.Instead) refers to rand.o(.emb_text) for rand
+    normal_display.o(i.Instead) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for TempCnt
+    normal_display.o(i.Instead) refers to display_ctrl.o(.bss) for ModeLed
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for ColorNum
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for RndCnt
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for TempLed
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for TempColor
+    normal_display.o(i.Instead) refers to display_ctrl.o(.bss) for ColorData
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for HorseCnt
+    normal_display.o(i.Instead) refers to data_process.o(.data) for SynFlag
+    normal_display.o(i.Instead) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for LedCnt
+    normal_display.o(i.Instead) refers to display_ctrl.o(.bss) for HoldTime
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for ModeSynFlag
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for FadeR
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for FadeG
+    normal_display.o(i.Instead) refers to display_ctrl.o(.data) for FadeB
+    normal_display.o(i.Polar_Light) refers to normal_display.o(i.All_Color) for All_Color
+    normal_display.o(i.Polar_Light) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.data) for TempB
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.data) for TempG
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.bss) for ModeTime
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.data) for TempR
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.data) for HorseWaitTime
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.data) for HorseStep
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.data) for HorseCnt
+    normal_display.o(i.Polar_Light) refers to data_process.o(.data) for SynFlag
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.data) for ModeSynFlag
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.data) for HorseOrder
+    normal_display.o(i.Polar_Light) refers to display_ctrl.o(.data) for TempLed
+    normal_display.o(i.Red_Flash) refers to normal_display.o(i.All_Color) for All_Color
+    normal_display.o(i.Red_Flash) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Red_Flash) refers to display_ctrl.o(.data) for TempG
+    normal_display.o(i.Red_Flash) refers to display_ctrl.o(.data) for TempB
+    normal_display.o(i.Red_Flash) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Red_Flash) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Red_Flash) refers to display_ctrl.o(.data) for TempR
+    normal_display.o(i.Ripple) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    normal_display.o(i.Ripple) refers to normal_display.o(i.All_Color) for All_Color
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.bss) for ColorData
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for TempDuty
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for TempLed
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.bss) for ModeTime
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.bss) for HoldTime
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.bss) for ModeColor
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for TempColor
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for FadeR
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for FadeG
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for FadeB
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for ModeSynFlag
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for HorseOrder
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for HorseWaitTime
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for HorseStep
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for HorseCnt
+    normal_display.o(i.Ripple) refers to data_process.o(.data) for SynFlag
+    normal_display.o(i.Ripple) refers to display_ctrl.o(.data) for ColorNum
+    normal_display.o(i.Roll) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for HorseOrder
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for ColorNum
+    normal_display.o(i.Roll) refers to display_ctrl.o(.bss) for ColorData
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Roll) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for FadeR
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for FadeG
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for FadeB
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for TempColor
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for HorseWaitTime
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for HorseStep
+    normal_display.o(i.Roll) refers to display_ctrl.o(.bss) for HoldTime
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for HorseCnt
+    normal_display.o(i.Roll) refers to data_process.o(.data) for SynFlag
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for ModeSynFlag
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for TempLed
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for TempR
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for TempG
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for TempB
+    normal_display.o(i.Roll) refers to display_ctrl.o(.data) for HorseTotal
+    normal_display.o(i.Sea_Wave) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    normal_display.o(i.Sea_Wave) refers to normal_display.o(i.All_Color) for All_Color
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for FadeR
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for FadeG
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for FadeB
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for TempR
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for TempG
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for TempB
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for TempColor
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for TempLed
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.bss) for ModeTime
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.bss) for HoldTime
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.bss) for ColorData
+    normal_display.o(i.Sea_Wave) refers to data_process.o(.data) for SynFlag
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for HorseCnt
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for ModeSynFlag
+    normal_display.o(i.Sea_Wave) refers to display_ctrl.o(.data) for ColorNum
+    normal_display.o(i.Sparkle) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    normal_display.o(i.Sparkle) refers to rand.o(.text) for srand
+    normal_display.o(i.Sparkle) refers to rand.o(.emb_text) for rand
+    normal_display.o(i.Sparkle) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Sparkle) refers to display_ctrl.o(.data) for TempLed
+    normal_display.o(i.Sparkle) refers to display_ctrl.o(.data) for SpeedTime
+    normal_display.o(i.Sparkle) refers to display_ctrl.o(.data) for ColorNum
+    normal_display.o(i.Sparkle) refers to display_ctrl.o(.bss) for ColorData
+    normal_display.o(i.Sparkle) refers to display_ctrl.o(.data) for TempColor
+    normal_display.o(i.Sparkle) refers to display_ctrl.o(.bss) for ModeTime
+    normal_display.o(i.Sparkle) refers to display_ctrl.o(.bss) for HoldTime
+    normal_display.o(i.Sparkle) refers to display_ctrl.o(.data) for TempR
+    normal_display.o(i.Sparkle) refers to display_ctrl.o(.data) for TempG
+    normal_display.o(i.Sparkle) refers to display_ctrl.o(.data) for TempB
+    normal_display.o(i.Sparkle) refers to display_ctrl.o(.bss) for ModeStep
+    normal_display.o(i.Steady) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    normal_display.o(i.Steady) refers to display_ctrl.o(.data) for DisplayData
+    normal_display.o(i.Steady) refers to display_ctrl.o(.data) for TempLed
+    normal_display.o(i.Steady) refers to display_ctrl.o(.data) for ColorNum
+    normal_display.o(i.Steady) refers to display_ctrl.o(.data) for TempColor
+    normal_display.o(i.Steady) refers to display_ctrl.o(.bss) for ColorData
+    show_1.o(i.Show_1) refers to normal_display.o(i.All_Color) for All_Color
+    show_1.o(i.Show_1) refers to show_1.o(i.Show_1_3) for Show_1_3
+    show_1.o(i.Show_1) refers to show_1.o(i.Show_1_0) for Show_1_0
+    show_1.o(i.Show_1) refers to show_1.o(i.Show_1_1) for Show_1_1
+    show_1.o(i.Show_1) refers to show_1.o(i.Show_1_2) for Show_1_2
+    show_1.o(i.Show_1) refers to display_ctrl.o(.data) for DisplayData
+    show_1.o(i.Show_1) refers to display_ctrl.o(.data) for ShowMode
+    show_1.o(i.Show_1) refers to display_ctrl.o(.data) for TimeLine
+    show_1.o(i.Show_1) refers to display_ctrl.o(.data) for ShowInit
+    show_1.o(i.Show_1) refers to data_process.o(.data) for SynFlag
+    show_1.o(i.Show_1_0) refers to normal_display.o(i.All_Color) for All_Color
+    show_1.o(i.Show_1_0) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.data) for ShowInit
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.data) for SpeedTime
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.data) for TempStep
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.data) for TempCnt
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.data) for TempR
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.data) for TempG
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.data) for TempB
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.data) for TempColor
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.data) for RndCnt
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.bss) for ColorData
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.data) for FadeR
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.data) for FadeG
+    show_1.o(i.Show_1_0) refers to display_ctrl.o(.data) for FadeB
+    show_1.o(i.Show_1_1) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    show_1.o(i.Show_1_1) refers to normal_display.o(i.All_Color) for All_Color
+    show_1.o(i.Show_1_1) refers to rand.o(.text) for srand
+    show_1.o(i.Show_1_1) refers to rand.o(.emb_text) for rand
+    show_1.o(i.Show_1_1) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for ShowInit
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for TempStep
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for SpeedTime
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for RndCnt
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for TempColor
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for ColorNum
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.bss) for ColorData
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for TempCnt
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.bss) for ModeLed
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for KeepTime
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for TempLed
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for RndSeed
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for TempR
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for TempG
+    show_1.o(i.Show_1_1) refers to display_ctrl.o(.data) for TempB
+    show_1.o(i.Show_1_2) refers to normal_display.o(i.All_Color) for All_Color
+    show_1.o(i.Show_1_2) refers to display_ctrl.o(.data) for ShowInit
+    show_1.o(i.Show_1_2) refers to display_ctrl.o(.data) for KeepTime
+    show_1.o(i.Show_1_2) refers to display_ctrl.o(.data) for SpeedTime
+    show_1.o(i.Show_1_2) refers to display_ctrl.o(.data) for ColorNum
+    show_1.o(i.Show_1_2) refers to display_ctrl.o(.data) for TempColor
+    show_1.o(i.Show_1_2) refers to display_ctrl.o(.data) for TempLed
+    show_1.o(i.Show_1_2) refers to display_ctrl.o(.bss) for ColorData
+    show_1.o(i.Show_1_2) refers to display_ctrl.o(.data) for TempStep
+    show_1.o(i.Show_1_2) refers to display_ctrl.o(.data) for RndCnt
+    show_1.o(i.Show_1_2) refers to display_ctrl.o(.data) for SteadyTime
+    show_1.o(i.Show_1_3) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    show_1.o(i.Show_1_3) refers to normal_display.o(i.All_Color) for All_Color
+    show_1.o(i.Show_1_3) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    show_1.o(i.Show_1_3) refers to rand.o(.text) for srand
+    show_1.o(i.Show_1_3) refers to rand.o(.emb_text) for rand
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for ShowInit
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for TempStep
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for SpeedTime
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for FadeR
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for FadeG
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for FadeB
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for TempR
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for TempG
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for TempB
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for TempCnt
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for TempColor
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.bss) for ColorData
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for SteadyTime
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for ColorNum
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.bss) for ModeLed
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for RndCnt
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for RndSeed
+    show_1.o(i.Show_1_3) refers to display_ctrl.o(.data) for TempLed
+    show_2.o(i.Show_2) refers to normal_display.o(i.All_Color) for All_Color
+    show_2.o(i.Show_2) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    show_2.o(i.Show_2) refers to show_2.o(i.Show_2_1) for Show_2_1
+    show_2.o(i.Show_2) refers to show_2.o(i.Show_2_0) for Show_2_0
+    show_2.o(i.Show_2) refers to show_2.o(i.Show_2_2) for Show_2_2
+    show_2.o(i.Show_2) refers to show_2.o(i.Show_2_3) for Show_2_3
+    show_2.o(i.Show_2) refers to show_2.o(i.Show_2_4) for Show_2_4
+    show_2.o(i.Show_2) refers to display_ctrl.o(.data) for DisplayData
+    show_2.o(i.Show_2) refers to display_ctrl.o(.data) for ShowMode
+    show_2.o(i.Show_2) refers to display_ctrl.o(.data) for TimeLine
+    show_2.o(i.Show_2) refers to display_ctrl.o(.data) for ShowInit
+    show_2.o(i.Show_2) refers to data_process.o(.data) for SynFlag
+    show_2.o(i.Show_2_0) refers to rand.o(.text) for srand
+    show_2.o(i.Show_2_0) refers to rand.o(.emb_text) for rand
+    show_2.o(i.Show_2_0) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    show_2.o(i.Show_2_0) refers to normal_display.o(i.All_Color) for All_Color
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for ShowInit
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for SpeedTime
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for TempColor
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for TempStep
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for RndCnt
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.bss) for ColorData
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for TempLed
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for RndSeed
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.bss) for ModeLed
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for ColorNum
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for TempCnt
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.bss) for ModeTime
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.bss) for ModeStep
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.bss) for HoldTime
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for SteadyTime
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for KeepTime
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for TempR
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for TempG
+    show_2.o(i.Show_2_0) refers to display_ctrl.o(.data) for TempB
+    show_2.o(i.Show_2_1) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    show_2.o(i.Show_2_1) refers to display_ctrl.o(.data) for ShowInit
+    show_2.o(i.Show_2_1) refers to display_ctrl.o(.data) for ColorNum
+    show_2.o(i.Show_2_1) refers to display_ctrl.o(.bss) for ColorData
+    show_2.o(i.Show_2_1) refers to display_ctrl.o(.data) for TempStep
+    show_2.o(i.Show_2_1) refers to display_ctrl.o(.data) for SpeedTime
+    show_2.o(i.Show_2_1) refers to display_ctrl.o(.data) for SteadyTime
+    show_2.o(i.Show_2_1) refers to display_ctrl.o(.data) for RndCnt
+    show_2.o(i.Show_2_1) refers to display_ctrl.o(.data) for TempColor
+    show_2.o(i.Show_2_1) refers to display_ctrl.o(.data) for TempR
+    show_2.o(i.Show_2_1) refers to display_ctrl.o(.data) for TempG
+    show_2.o(i.Show_2_1) refers to display_ctrl.o(.data) for TempB
+    show_2.o(i.Show_2_1) refers to display_ctrl.o(.data) for TempLed
+    show_2.o(i.Show_2_2) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.data) for ShowInit
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.data) for TempStep
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.data) for ColorNum
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.data) for SteadyTime
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.data) for TempColor
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.bss) for ColorData
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.data) for SpeedTime
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.bss) for ModeStep
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.data) for TempLed
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.data) for RndCnt
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.data) for FadeR
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.data) for FadeG
+    show_2.o(i.Show_2_2) refers to display_ctrl.o(.data) for FadeB
+    show_2.o(i.Show_2_3) refers to normal_display.o(i.All_Color) for All_Color
+    show_2.o(i.Show_2_3) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    show_2.o(i.Show_2_3) refers to rand.o(.text) for srand
+    show_2.o(i.Show_2_3) refers to rand.o(.emb_text) for rand
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for ShowInit
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for RndCnt
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for TempStep
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for TempR
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for TempG
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for TempB
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for FadeR
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for FadeG
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for FadeB
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for TempColor
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for SpeedTime
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for KeepTime
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.bss) for ColorData
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for TempLed
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for RndSeed
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.bss) for HoldTime
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.bss) for ModeLed
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.bss) for ModeTime
+    show_2.o(i.Show_2_3) refers to display_ctrl.o(.data) for ColorNum
+    show_2.o(i.Show_2_4) refers to normal_display.o(i.All_Color) for All_Color
+    show_2.o(i.Show_2_4) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    show_2.o(i.Show_2_4) refers to display_ctrl.o(.data) for ShowInit
+    show_2.o(i.Show_2_4) refers to display_ctrl.o(.data) for TempR
+    show_2.o(i.Show_2_4) refers to display_ctrl.o(.data) for TempG
+    show_2.o(i.Show_2_4) refers to display_ctrl.o(.data) for TempB
+    show_2.o(i.Show_2_4) refers to display_ctrl.o(.data) for TempColor
+    show_2.o(i.Show_2_4) refers to display_ctrl.o(.data) for SpeedTime
+    show_2.o(i.Show_2_4) refers to display_ctrl.o(.data) for TempStep
+    show_2.o(i.Show_2_4) refers to display_ctrl.o(.data) for KeepTime
+    show_2.o(i.Show_2_4) refers to display_ctrl.o(.data) for TempLed
+    show_3.o(i.Show_3) refers to normal_display.o(i.All_Color) for All_Color
+    show_3.o(i.Show_3) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    show_3.o(i.Show_3) refers to show_3.o(i.Show_3_0) for Show_3_0
+    show_3.o(i.Show_3) refers to show_3.o(i.Show_3_1) for Show_3_1
+    show_3.o(i.Show_3) refers to show_3.o(i.Show_3_2) for Show_3_2
+    show_3.o(i.Show_3) refers to show_3.o(i.Show_3_3) for Show_3_3
+    show_3.o(i.Show_3) refers to show_3.o(i.Show_3_4) for Show_3_4
+    show_3.o(i.Show_3) refers to display_ctrl.o(.data) for DisplayData
+    show_3.o(i.Show_3) refers to display_ctrl.o(.data) for ShowMode
+    show_3.o(i.Show_3) refers to display_ctrl.o(.data) for TimeLine
+    show_3.o(i.Show_3) refers to display_ctrl.o(.data) for ShowInit
+    show_3.o(i.Show_3) refers to data_process.o(.data) for SynFlag
+    show_3.o(i.Show_3_0) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    show_3.o(i.Show_3_0) refers to normal_display.o(i.All_Color) for All_Color
+    show_3.o(i.Show_3_0) refers to rand.o(.text) for srand
+    show_3.o(i.Show_3_0) refers to rand.o(.emb_text) for rand
+    show_3.o(i.Show_3_0) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.data) for ShowInit
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.data) for TempStep
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.data) for ColorNum
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.data) for SteadyTime
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.data) for SpeedTime
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.data) for TempColor
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.data) for RndCnt
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.bss) for ColorData
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.bss) for ModeStep
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.data) for KeepTime
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.data) for TempLed
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.data) for TempCnt
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.bss) for ModeLed
+    show_3.o(i.Show_3_0) refers to display_ctrl.o(.data) for RndSeed
+    show_3.o(i.Show_3_1) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    show_3.o(i.Show_3_1) refers to normal_display.o(i.All_Color) for All_Color
+    show_3.o(i.Show_3_1) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    show_3.o(i.Show_3_1) refers to rand.o(.text) for srand
+    show_3.o(i.Show_3_1) refers to rand.o(.emb_text) for rand
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for ShowInit
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for TempStep
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for KeepTime
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for TempR
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for TempG
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for TempB
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for FadeR
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for FadeG
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for FadeB
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for RndCnt
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for TempColor
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for ColorNum
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for SpeedTime
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.bss) for ColorData
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for TempLed
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for RndSeed
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.bss) for HoldTime
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.bss) for ModeLed
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.bss) for ModeTime
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.data) for TempCnt
+    show_3.o(i.Show_3_1) refers to display_ctrl.o(.bss) for ModeStep
+    show_3.o(i.Show_3_2) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    show_3.o(i.Show_3_2) refers to rand.o(.text) for srand
+    show_3.o(i.Show_3_2) refers to rand.o(.emb_text) for rand
+    show_3.o(i.Show_3_2) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    show_3.o(i.Show_3_2) refers to normal_display.o(i.All_Color) for All_Color
+    show_3.o(i.Show_3_2) refers to display_ctrl.o(.data) for ShowInit
+    show_3.o(i.Show_3_2) refers to display_ctrl.o(.data) for TempStep
+    show_3.o(i.Show_3_2) refers to display_ctrl.o(.data) for TempG
+    show_3.o(i.Show_3_2) refers to display_ctrl.o(.data) for TempR
+    show_3.o(i.Show_3_2) refers to display_ctrl.o(.data) for TempB
+    show_3.o(i.Show_3_2) refers to display_ctrl.o(.data) for SpeedTime
+    show_3.o(i.Show_3_2) refers to display_ctrl.o(.data) for KeepTime
+    show_3.o(i.Show_3_2) refers to display_ctrl.o(.data) for TempCnt
+    show_3.o(i.Show_3_2) refers to display_ctrl.o(.bss) for ModeLed
+    show_3.o(i.Show_3_2) refers to display_ctrl.o(.data) for RndCnt
+    show_3.o(i.Show_3_2) refers to display_ctrl.o(.data) for RndSeed
+    show_3.o(i.Show_3_2) refers to display_ctrl.o(.data) for TempLed
+    show_3.o(i.Show_3_3) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    show_3.o(i.Show_3_3) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    show_3.o(i.Show_3_3) refers to normal_display.o(i.All_Color) for All_Color
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for ShowInit
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for TempStep
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for KeepTime
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for TempColor
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for ColorNum
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for TempLed
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.bss) for ColorData
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for SpeedTime
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for TempR
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for TempG
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for TempB
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for FadeR
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for FadeG
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for FadeB
+    show_3.o(i.Show_3_3) refers to display_ctrl.o(.data) for RndCnt
+    show_3.o(i.Show_3_4) refers to rand.o(.text) for srand
+    show_3.o(i.Show_3_4) refers to rand.o(.emb_text) for rand
+    show_3.o(i.Show_3_4) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    show_3.o(i.Show_3_4) refers to normal_display.o(i.All_Color) for All_Color
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for ShowInit
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for TempStep
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for SpeedTime
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.bss) for ModeLed
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for TempColor
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for KeepTime
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for TempR
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for TempG
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for TempB
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for TempCnt
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for RndCnt
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for RndSeed
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for TempLed
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.bss) for ModeColor
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.bss) for ColorData
+    show_3.o(i.Show_3_4) refers to display_ctrl.o(.data) for ColorNum
+    csr1010.o(i.Csr1010_Rcv_Byte) refers to csr1010.o(.bss) for .bss
+    csr1010.o(i.Csr1010_Rcv_Byte) refers to csr1010.o(.data) for .data
+    csr1010.o(i.Csr1010_Rcv_Data) refers to csr1010.o(.data) for .data
+    csr1010.o(i.Csr1010_Rcv_Data) refers to csr1010.o(.bss) for .bss
+    csr1010.o(i.Csr1010_Snd_Data) refers to csr1010.o(.bss) for .bss
+    csr1010.o(i.Csr1010_Snd_Data) refers to csr1010.o(.data) for .data
+    csr1010.o(i.UART0_IRQHandler) refers to csr1010.o(i.Csr1010_Rcv_Byte) for Csr1010_Rcv_Byte
+    csr1010.o(i.Uart_Clear_Buf) refers to csr1010.o(.bss) for .bss
+    data_process.o(i.CSR1010_Process) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    data_process.o(i.CSR1010_Process) refers to data_process.o(i.Color_Value_Get) for Color_Value_Get
+    data_process.o(i.CSR1010_Process) refers to data_process.o(i.Hex_To_Char) for Hex_To_Char
+    data_process.o(i.CSR1010_Process) refers to data_process.o(.data) for .data
+    data_process.o(i.CSR1010_Process) refers to display_ctrl.o(.data) for HorseOrder
+    data_process.o(i.CSR1010_Process) refers to display_ctrl.o(.data) for HorseTotal
+    data_process.o(i.CSR1010_Process) refers to csr1010.o(.bss) for SndData
+    data_process.o(i.CSR1010_Process) refers to csr1010.o(.data) for RcvFlag
+    data_process.o(i.CSR1010_Process) refers to bt_control.o(.data) for BtRcvDataFlag
+    data_process.o(i.CSR1010_Process) refers to display_ctrl.o(.data) for DisplayData
+    data_process.o(i.CSR1010_Process) refers to timer_ctrl.o(.data) for TimerData
+    data_process.o(i.CSR1010_Process) refers to flash_prgrm.o(.data) for FlashSaveFlag
+    data_process.o(i.CSR1010_Process) refers to music.o(.data) for MusicEnFlag
+    data_process.o(i.CSR1010_Process) refers to display_ctrl.o(.data) for ModeSynFlag
+    data_process.o(i.CSR1010_Process) refers to mcu_config.o(.data) for HseStatus
+    data_process.o(i.Color_Value_Get) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    data_process.o(i.Color_Value_Get) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    data_process.o(i.Color_Value_Get) refers to display_ctrl.o(.data) for DisplayData
+    data_process.o(i.Color_Value_Get) refers to display_ctrl.o(.bss) for ColorData
+    data_process.o(i.Color_Value_Get) refers to display_ctrl.o(.data) for ColorNum
+    data_process.o(i.Color_Value_Get) refers to data_process.o(.constdata) for .constdata
+    data_process.o(i.Data_Process) refers to data_process.o(i.Password_Process) for Password_Process
+    data_process.o(i.Data_Process) refers to data_process.o(i.Syn_Process) for Syn_Process
+    data_process.o(i.Data_Process) refers to data_process.o(i.CSR1010_Process) for CSR1010_Process
+    data_process.o(i.Data_Process) refers to timer_ctrl.o(.data) for TimerData
+    data_process.o(i.Data_Process) refers to display_ctrl.o(.data) for DisplayData
+    data_process.o(i.Password_Process) refers to data_process.o(.data) for .data
+    data_process.o(i.Password_Process) refers to flash_prgrm.o(.data) for FlashSaveFlag
+    data_process.o(i.Syn_Process) refers to data_process.o(.data) for .data
+    data_process.o(i.Syn_Process) refers to display_ctrl.o(.data) for ModeSynFlag
+    data_process.o(i.Syn_Process) refers to csr1010.o(.bss) for SndData
+    data_process.o(i.Syn_Process) refers to display_ctrl.o(.data) for DisplayData
+    data_process.o(i.Syn_Process) refers to csr1010.o(.data) for SynData
+    data_process.o(i.User_Data_Init) refers to flash_prgrm.o(i.Flash_Read_Data) for Flash_Read_Data
+    data_process.o(i.User_Data_Init) refers to data_process.o(i.Color_Value_Get) for Color_Value_Get
+    data_process.o(i.User_Data_Init) refers to data_process.o(i.Hex_To_Char) for Hex_To_Char
+    data_process.o(i.User_Data_Init) refers to data_process.o(.data) for .data
+    data_process.o(i.User_Data_Init) refers to display_ctrl.o(.data) for DisplayData
+    data_process.o(i.User_Data_Init) refers to flash_prgrm.o(.data) for FlashSaveFlag
+    data_process.o(i.User_Data_Init) refers to timer_ctrl.o(.data) for TimerData
+    data_process.o(i.User_Data_Init) refers to csr1010.o(.data) for ChkSumReply
+    data_process.o(i.User_Data_Init) refers to display_ctrl.o(.data) for HorseOrder
+    data_process.o(i.User_Data_Init) refers to display_ctrl.o(.data) for HorseTotal
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.All_Off) for All_Off
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Steady) for Steady
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Blink) for Blink
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Sparkle) for Sparkle
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Instead) for Instead
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Sea_Wave) for Sea_Wave
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Roll) for Roll
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Ripple) for Ripple
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Flower_Bloom) for Flower_Bloom
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Polar_Light) for Polar_Light
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Color_Show) for Color_Show
+    display_ctrl.o(i.Led_Display) refers to show_1.o(i.Show_1) for Show_1
+    display_ctrl.o(i.Led_Display) refers to show_2.o(i.Show_2) for Show_2
+    display_ctrl.o(i.Led_Display) refers to show_3.o(i.Show_3) for Show_3
+    display_ctrl.o(i.Led_Display) refers to music.o(i.Music_Mode) for Music_Mode
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Blue_Flash) for Blue_Flash
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Green_Flash) for Green_Flash
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Red_Flash) for Red_Flash
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Direct_Set) for Direct_Set
+    display_ctrl.o(i.Led_Display) refers to normal_display.o(i.Horse_Whole_Test) for Horse_Whole_Test
+    display_ctrl.o(i.Led_Display) refers to display_ctrl.o(.data) for .data
+    flash_prgrm.o(i.Flash_Read_Data) refers to flash_prgrm.o(i.SYS_UnlockReg) for SYS_UnlockReg
+    flash_prgrm.o(i.Flash_Read_Data) refers to fmc.o(i.FMC_Open) for FMC_Open
+    flash_prgrm.o(i.Flash_Read_Data) refers to fmc.o(i.FMC_Read) for FMC_Read
+    flash_prgrm.o(i.Flash_Read_Data) refers to display_ctrl.o(.data) for DisplayData
+    flash_prgrm.o(i.Flash_Read_Data) refers to timer_ctrl.o(.data) for TimerData
+    flash_prgrm.o(i.Flash_Read_Data) refers to display_ctrl.o(.data) for HorseOrder
+    flash_prgrm.o(i.Flash_Read_Data) refers to display_ctrl.o(.data) for HorseTotal
+    flash_prgrm.o(i.Flash_Read_Data) refers to data_process.o(.data) for ChkSumRst
+    flash_prgrm.o(i.Flash_Write_Data) refers to flash_prgrm.o(i.SYS_UnlockReg) for SYS_UnlockReg
+    flash_prgrm.o(i.Flash_Write_Data) refers to fmc.o(i.FMC_Open) for FMC_Open
+    flash_prgrm.o(i.Flash_Write_Data) refers to fmc.o(i.FMC_Erase) for FMC_Erase
+    flash_prgrm.o(i.Flash_Write_Data) refers to fmc.o(i.FMC_Write) for FMC_Write
+    flash_prgrm.o(i.Flash_Write_Data) refers to flash_prgrm.o(.data) for .data
+    flash_prgrm.o(i.Flash_Write_Data) refers to display_ctrl.o(.data) for DisplayData
+    flash_prgrm.o(i.Flash_Write_Data) refers to timer_ctrl.o(.data) for TimerData
+    flash_prgrm.o(i.Flash_Write_Data) refers to display_ctrl.o(.data) for HorseOrder
+    flash_prgrm.o(i.Flash_Write_Data) refers to display_ctrl.o(.data) for HorseTotal
+    flash_prgrm.o(i.Flash_Write_Data) refers to data_process.o(.data) for ChkSumRstSave
+    led_class.o(i.Led_Update) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    led_class.o(i.Led_Update) refers to led_class.o(.bss) for .bss
+    mcu_config.o(i.CLK_Init) refers to clk.o(i.CLK_EnableXtalRC) for CLK_EnableXtalRC
+    mcu_config.o(i.CLK_Init) refers to clk.o(i.CLK_WaitClockReady) for CLK_WaitClockReady
+    mcu_config.o(i.CLK_Init) refers to clk.o(i.CLK_SetHCLK) for CLK_SetHCLK
+    mcu_config.o(i.CLK_Init) refers to clk.o(i.CLK_SetCoreClock) for CLK_SetCoreClock
+    mcu_config.o(i.CLK_Init) refers to system_mini58series.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    mcu_config.o(i.CLK_Init) refers to mcu_config.o(.data) for .data
+    mcu_config.o(i.GPIO_Init) refers to gpio.o(i.GPIO_SetMode) for GPIO_SetMode
+    mcu_config.o(i.MCU_Config) refers to mcu_config.o(i.CLK_Init) for CLK_Init
+    mcu_config.o(i.MCU_Config) refers to mcu_config.o(i.GPIO_Init) for GPIO_Init
+    mcu_config.o(i.MCU_Config) refers to uart.o(i.UART_SetTimeoutCnt) for UART_SetTimeoutCnt
+    mcu_config.o(i.MCU_Config) refers to uart.o(i.UART_Open) for UART_Open
+    mcu_config.o(i.MCU_Config) refers to timer.o(i.TIMER_Open) for TIMER_Open
+    showhomeapp.o(i.main) refers to mcu_config.o(i.MCU_Config) for MCU_Config
+    showhomeapp.o(i.main) refers to data_process.o(i.User_Data_Init) for User_Data_Init
+    showhomeapp.o(i.main) refers to csr1010.o(i.Uart_Clear_Buf) for Uart_Clear_Buf
+    showhomeapp.o(i.main) refers to data_process.o(i.Data_Process) for Data_Process
+    showhomeapp.o(i.main) refers to csr1010.o(i.Csr1010_Rcv_Data) for Csr1010_Rcv_Data
+    showhomeapp.o(i.main) refers to csr1010.o(i.Csr1010_Snd_Data) for Csr1010_Snd_Data
+    showhomeapp.o(i.main) refers to display_ctrl.o(i.Led_Display) for Led_Display
+    showhomeapp.o(i.main) refers to led_class.o(i.Led_Update) for Led_Update
+    showhomeapp.o(i.main) refers to timer_ctrl.o(i.Count_Down_Control) for Count_Down_Control
+    showhomeapp.o(i.main) refers to flash_prgrm.o(i.Flash_Write_Data) for Flash_Write_Data
+    showhomeapp.o(i.main) refers to bt_control.o(i.BT_Work_Detect) for BT_Work_Detect
+    showhomeapp.o(i.main) refers to data_process.o(.data) for WdtRstFlag
+    timer_ctrl.o(i.Count_Down_Control) refers to timer_ctrl.o(.data) for .data
+    bt_control.o(i.BT_Power_Control) refers to gpio.o(i.GPIO_SetMode) for GPIO_SetMode
+    bt_control.o(i.BT_Power_Control) refers to bt_control.o(.data) for .data
+    bt_control.o(i.BT_Work_Detect) refers to bt_control.o(i.BT_Power_Control) for BT_Power_Control
+    bt_control.o(i.BT_Work_Detect) refers to bt_control.o(.data) for .data
+    music.o(i.Music_DO) refers to music.o(.data) for .data
+    music.o(i.Music_DO) refers to display_ctrl.o(.bss) for ModeTime
+    music.o(i.Music_DO) refers to display_ctrl.o(.data) for TempStep
+    music.o(i.Music_DO) refers to music.o(.constdata) for .constdata
+    music.o(i.Music_DO) refers to display_ctrl.o(.data) for TempLed
+    music.o(i.Music_DO) refers to display_ctrl.o(.data) for FadeR
+    music.o(i.Music_DO) refers to display_ctrl.o(.data) for FadeG
+    music.o(i.Music_DO) refers to display_ctrl.o(.data) for FadeB
+    music.o(i.Music_FA) refers to music.o(.data) for .data
+    music.o(i.Music_FA) refers to display_ctrl.o(.bss) for ModeTime
+    music.o(i.Music_FA) refers to display_ctrl.o(.data) for TempStep
+    music.o(i.Music_FA) refers to display_ctrl.o(.data) for TempLed
+    music.o(i.Music_FA) refers to music.o(.constdata) for .constdata
+    music.o(i.Music_LA) refers to music.o(.data) for .data
+    music.o(i.Music_LA) refers to display_ctrl.o(.bss) for ModeTime
+    music.o(i.Music_LA) refers to display_ctrl.o(.data) for TempStep
+    music.o(i.Music_LA) refers to display_ctrl.o(.bss) for ModeStep
+    music.o(i.Music_LA) refers to display_ctrl.o(.data) for TempLed
+    music.o(i.Music_LA) refers to music.o(.constdata) for .constdata
+    music.o(i.Music_MI) refers to music.o(.data) for .data
+    music.o(i.Music_MI) refers to display_ctrl.o(.bss) for ModeTime
+    music.o(i.Music_MI) refers to display_ctrl.o(.data) for TempStep
+    music.o(i.Music_MI) refers to display_ctrl.o(.data) for TempLed
+    music.o(i.Music_MI) refers to music.o(.constdata) for .constdata
+    music.o(i.Music_Mode) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    music.o(i.Music_Mode) refers to normal_display.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    music.o(i.Music_Mode) refers to music.o(i.Music_DO) for Music_DO
+    music.o(i.Music_Mode) refers to music.o(i.Music_RE) for Music_RE
+    music.o(i.Music_Mode) refers to music.o(i.Music_MI) for Music_MI
+    music.o(i.Music_Mode) refers to music.o(i.Music_FA) for Music_FA
+    music.o(i.Music_Mode) refers to music.o(i.Music_SO) for Music_SO
+    music.o(i.Music_Mode) refers to music.o(i.Music_LA) for Music_LA
+    music.o(i.Music_Mode) refers to music.o(i.Music_XI) for Music_XI
+    music.o(i.Music_Mode) refers to music.o(.data) for .data
+    music.o(i.Music_Mode) refers to display_ctrl.o(.data) for DisplayData
+    music.o(i.Music_Mode) refers to display_ctrl.o(.data) for TempGrp
+    music.o(i.Music_Mode) refers to display_ctrl.o(.data) for TempLed
+    music.o(i.Music_Mode) refers to display_ctrl.o(.bss) for ModeTime
+    music.o(i.Music_Mode) refers to display_ctrl.o(.bss) for ModeStep
+    music.o(i.Music_Mode) refers to display_ctrl.o(.bss) for ModeLed
+    music.o(i.Music_Mode) refers to display_ctrl.o(.bss) for ModeColor
+    music.o(i.Music_Mode) refers to display_ctrl.o(.data) for TempColor
+    music.o(i.Music_Mode) refers to display_ctrl.o(.bss) for HoldTime
+    music.o(i.Music_RE) refers to music.o(.data) for .data
+    music.o(i.Music_RE) refers to display_ctrl.o(.bss) for ModeTime
+    music.o(i.Music_RE) refers to display_ctrl.o(.data) for TempStep
+    music.o(i.Music_RE) refers to music.o(.constdata) for .constdata
+    music.o(i.Music_SO) refers to music.o(.data) for .data
+    music.o(i.Music_SO) refers to display_ctrl.o(.bss) for ModeTime
+    music.o(i.Music_SO) refers to display_ctrl.o(.data) for TempStep
+    music.o(i.Music_SO) refers to display_ctrl.o(.data) for TempLed
+    music.o(i.Music_SO) refers to music.o(.constdata) for .constdata
+    music.o(i.Music_XI) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    music.o(i.Music_XI) refers to music.o(.data) for .data
+    music.o(i.Music_XI) refers to display_ctrl.o(.data) for TempStep
+    music.o(i.Music_XI) refers to display_ctrl.o(.bss) for ModeTime
+    music.o(i.Music_XI) refers to display_ctrl.o(.bss) for ModeStep
+    music.o(i.Music_XI) refers to music.o(.constdata) for .constdata
+    music.o(i.Music_XI) refers to display_ctrl.o(.data) for FadeR
+    music.o(i.Music_XI) refers to display_ctrl.o(.data) for FadeG
+    music.o(i.Music_XI) refers to display_ctrl.o(.data) for FadeB
+    music.o(i.Music_XI) refers to display_ctrl.o(.data) for TempLed
+    clk.o(i.CLK_EnablePLL) refers to clk.o(i.CLK_DisablePLL) for CLK_DisablePLL
+    clk.o(i.CLK_EnablePLL) refers to clk.o(i.CLK_WaitClockReady) for CLK_WaitClockReady
+    clk.o(i.CLK_EnablePLL) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    clk.o(i.CLK_GetCPUFreq) refers to system_mini58series.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    clk.o(i.CLK_GetCPUFreq) refers to system_mini58series.o(.data) for SystemCoreClock
+    clk.o(i.CLK_GetHCLKFreq) refers to system_mini58series.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    clk.o(i.CLK_GetHCLKFreq) refers to system_mini58series.o(.data) for SystemCoreClock
+    clk.o(i.CLK_SetCoreClock) refers to clk.o(i.CLK_WaitClockReady) for CLK_WaitClockReady
+    clk.o(i.CLK_SetCoreClock) refers to clk.o(i.CLK_EnablePLL) for CLK_EnablePLL
+    clk.o(i.CLK_SetCoreClock) refers to clk.o(i.CLK_SetHCLK) for CLK_SetHCLK
+    clk.o(i.CLK_SetHCLK) refers to system_mini58series.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    clk.o(i.CLK_SysTickDelay) refers to system_mini58series.o(.data) for CyclesPerUs
+    fmc.o(i.FMC_ReadConfig) refers to fmc.o(i.FMC_Read) for FMC_Read
+    fmc.o(i.FMC_WriteConfig) refers to fmc.o(i.FMC_Erase) for FMC_Erase
+    fmc.o(i.FMC_WriteConfig) refers to fmc.o(i.FMC_Write) for FMC_Write
+    pwm.o(i.PWM_ConfigOutputChannel) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    pwm.o(i.PWM_ConfigOutputChannel) refers to system_mini58series.o(.data) for SystemCoreClock
+    timer.o(i.TIMER_Delay) refers to timer.o(i.TIMER_GetModuleClock) for TIMER_GetModuleClock
+    timer.o(i.TIMER_Delay) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    timer.o(i.TIMER_Delay) refers to fflti.o(.text) for __aeabi_ui2f
+    timer.o(i.TIMER_Delay) refers to fmul.o(x$fpl$fmul) for __aeabi_fmul
+    timer.o(i.TIMER_Delay) refers to fdiv.o(.text) for __aeabi_fdiv
+    timer.o(i.TIMER_Delay) refers to ffixui.o(.text) for __aeabi_f2uiz
+    timer.o(i.TIMER_Delay) refers to system_mini58series.o(.data) for SystemCoreClock
+    timer.o(i.TIMER_GetModuleClock) refers to system_mini58series.o(.data) for __HSI
+    timer.o(i.TIMER_GetModuleClock) refers to system_mini58series.o(.data) for SystemCoreClock
+    timer.o(i.TIMER_Open) refers to timer.o(i.TIMER_GetModuleClock) for TIMER_GetModuleClock
+    timer.o(i.TIMER_Open) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    uart.o(i.CLK_GetPLLClockFreq) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    uart.o(i.UART_Open) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    uart.o(i.UART_Open) refers to uart.o(i.CLK_GetPLLClockFreq) for CLK_GetPLLClockFreq
+    uart.o(i.UART_Open) refers to system_mini58series.o(.data) for __HSI
+    uart.o(i.UART_SelectIrDAMode) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    uart.o(i.UART_SelectIrDAMode) refers to uart.o(i.CLK_GetPLLClockFreq) for CLK_GetPLLClockFreq
+    uart.o(i.UART_SelectIrDAMode) refers to system_mini58series.o(.data) for __HSI
+    uart.o(i.UART_SetLine_Config) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    uart.o(i.UART_SetLine_Config) refers to uart.o(i.CLK_GetPLLClockFreq) for CLK_GetPLLClockFreq
+    uart.o(i.UART_SetLine_Config) refers to system_mini58series.o(.data) for __HSI
+    retarget.o(.emb_text) refers to retarget.o(i.Hard_Fault_Handler) for Hard_Fault_Handler
+    retarget.o(i.Hard_Fault_Handler) refers to noretval__2printf.o(.text) for __2printf
+    retarget.o(i.Hard_Fault_Handler) refers to retarget.o(i.stackDump) for stackDump
+    retarget.o(i.SendChar) refers to retarget.o(i.SendChar_ToUART) for SendChar_ToUART
+    retarget.o(i._ttywrch) refers to retarget.o(i.SendChar_ToUART) for SendChar_ToUART
+    retarget.o(i.fgetc) refers to retarget.o(i.GetChar) for GetChar
+    retarget.o(i.fputc) refers to retarget.o(i.SendChar_ToUART) for SendChar_ToUART
+    retarget.o(i.stackDump) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    retarget.o(i.stackDump) refers to _printf_x.o(.ARM.Collect$$_printf_percent$$0000000C) for _printf_x
+    retarget.o(i.stackDump) refers to _printf_hex_int.o(.text) for _printf_longlong_hex
+    retarget.o(i.stackDump) refers to noretval__2printf.o(.text) for __2printf
+    startup_mini58series.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_mini58series.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_mini58series.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_mini58series.o(RESET) refers to startup_mini58series.o(STACK) for __initial_sp
+    startup_mini58series.o(RESET) refers to startup_mini58series.o(.text) for Reset_Handler
+    startup_mini58series.o(RESET) refers to retarget.o(.emb_text) for HardFault_Handler
+    startup_mini58series.o(RESET) refers to csr1010.o(i.UART0_IRQHandler) for UART0_IRQHandler
+    startup_mini58series.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_mini58series.o(.text) refers to __main.o(!!!main) for __main
+    startup_mini58series.o(.text) refers to startup_mini58series.o(HEAP) for Heap_Mem
+    startup_mini58series.o(.text) refers to startup_mini58series.o(STACK) for Stack_Mem
+    system_mini58series.o(i.SystemCoreClockUpdate) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    system_mini58series.o(i.SystemCoreClockUpdate) refers to system_mini58series.o(.data) for .data
+    __2printf.o(.text) refers to _printf_char_file.o(.text) for _printf_char_file
+    __2printf.o(.text) refers to retarget.o(.data) for __stdout
+    noretval__2printf.o(.text) refers to _printf_char_file.o(.text) for _printf_char_file
+    noretval__2printf.o(.text) refers to retarget.o(.data) for __stdout
+    __printf.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    _printf_hex_ll.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_ll.o(.text) refers to _printf_hex_ll.o(.constdata) for .constdata
+    _printf_hex_int.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_int.o(.text) refers to _printf_hex_int.o(.constdata) for .constdata
+    _printf_hex_int_ll.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_int_ll.o(.text) refers to _printf_hex_int_ll.o(.constdata) for .constdata
+    _printf_hex_ptr.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_ptr.o(.text) refers to _printf_hex_ptr.o(.constdata) for .constdata
+    _printf_hex_int_ptr.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_int_ptr.o(.text) refers to _printf_hex_int_ptr.o(.constdata) for .constdata
+    _printf_hex_ll_ptr.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_ll_ptr.o(.text) refers to _printf_hex_ll_ptr.o(.constdata) for .constdata
+    _printf_hex_int_ll_ptr.o(.text) refers to _printf_intcommon.o(.text) for _printf_int_common
+    _printf_hex_int_ll_ptr.o(.text) refers to _printf_hex_int_ll_ptr.o(.constdata) for .constdata
+    __printf_flags.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags.o(.text) refers to __printf_flags.o(.constdata) for .constdata
+    __printf_ss.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_ss.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_ss.o(.text) refers to __printf_flags_ss.o(.constdata) for .constdata
+    __printf_wp.o(.text) refers to __printf_wp.o(i._is_digit) for _is_digit
+    __printf_wp.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_wp.o(.text) refers to __printf_wp.o(i._is_digit) for _is_digit
+    __printf_flags_wp.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_wp.o(.text) refers to __printf_flags_wp.o(.constdata) for .constdata
+    __printf_ss_wp.o(.text) refers to __printf_wp.o(i._is_digit) for _is_digit
+    __printf_ss_wp.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_ss_wp.o(.text) refers to __printf_wp.o(i._is_digit) for _is_digit
+    __printf_flags_ss_wp.o(.text) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    __printf_flags_ss_wp.o(.text) refers to __printf_flags_ss_wp.o(.constdata) for .constdata
+    _printf_x.o(.ARM.Collect$$_printf_percent$$0000000C) refers (Weak) to _printf_hex_int.o(.text) for _printf_int_hex
+    _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) refers (Special) to _printf_percent_end.o(.ARM.Collect$$_printf_percent$$00000017) for _printf_percent_end
+    rand.o(.emb_text) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000D) for __rt_lib_init_rand_2
+    rand.o(.emb_text) refers to rand.o(.text) for _rand_init
+    rand.o(.emb_text) refers to rand.o(.bss) for _random_number_data
+    rand.o(.text) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000D) for __rt_lib_init_rand_2
+    rand.o(.text) refers to rand.o(.bss) for .bss
+    rand.o(.bss) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000D) for __rt_lib_init_rand_2
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    fdiv.o(.text) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fdiv.o(.text) refers to fdiv.o(.constdata) for .constdata
+    fdiv.o(.constdata) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    ffixui.o(.text) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fflti.o(.text) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    fmul.o(x$fpl$fmul) refers (Special) to usenofp.o(x$fpl$usenofp) for __I$use$fp
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    aeabi_idiv0_sigfpe.o(.text) refers to rt_div0.o(.text) for __rt_div0
+    _printf_char_file.o(.text) refers to _printf_char_common.o(.text) for _printf_char_common
+    _printf_char_file.o(.text) refers to retarget.o(i.ferror) for ferror
+    _printf_char_file.o(.text) refers to retarget.o(i.fputc) for fputc
+    libinit2.o(.ARM.Collect$$libinit$$0000000D) refers (Weak) to rand.o(.text) for _rand_init
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000026) refers to argv_veneer.o(.text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000027) refers to argv_veneer.o(.text) for __ARM_argv_veneer
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to showhomeapp.o(i.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    rt_div0.o(.text) refers to defsig_fpe_outer.o(.text) for __rt_SIGFPE
+    _printf_char_common.o(.text) refers to __printf_wp.o(.text) for __printf
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_mini58series.o(.text) for __user_initial_stackheap
+    sys_stackheap_outer.o(__vectab_stack_and_reset_area) refers to tempstk.o(.text) for __temporary_stack_top
+    sys_stackheap_outer.o(__vectab_stack_and_reset_area) refers to __main.o(!!!main) for __main
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    defsig_fpe_outer.o(.text) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig_fpe_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_fpe_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000002) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000033) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to retarget.o(i._ttywrch) for _ttywrch
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig.o(CL$$defsig) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing normal_display.o(.rev16_text), (4 bytes).
+    Removing normal_display.o(.revsh_text), (4 bytes).
+    Removing show_1.o(.rev16_text), (4 bytes).
+    Removing show_1.o(.revsh_text), (4 bytes).
+    Removing show_2.o(.rev16_text), (4 bytes).
+    Removing show_2.o(.revsh_text), (4 bytes).
+    Removing show_3.o(.rev16_text), (4 bytes).
+    Removing show_3.o(.revsh_text), (4 bytes).
+    Removing csr1010.o(.rev16_text), (4 bytes).
+    Removing csr1010.o(.revsh_text), (4 bytes).
+    Removing data_process.o(.rev16_text), (4 bytes).
+    Removing data_process.o(.revsh_text), (4 bytes).
+    Removing display_ctrl.o(.rev16_text), (4 bytes).
+    Removing display_ctrl.o(.revsh_text), (4 bytes).
+    Removing display_ctrl.o(.data), (1 bytes).
+    Removing display_ctrl.o(.data), (1 bytes).
+    Removing display_ctrl.o(.data), (2 bytes).
+    Removing flash_prgrm.o(.rev16_text), (4 bytes).
+    Removing flash_prgrm.o(.revsh_text), (4 bytes).
+    Removing led_class.o(.rev16_text), (4 bytes).
+    Removing led_class.o(.revsh_text), (4 bytes).
+    Removing mcu_config.o(.rev16_text), (4 bytes).
+    Removing mcu_config.o(.revsh_text), (4 bytes).
+    Removing showhomeapp.o(.rev16_text), (4 bytes).
+    Removing showhomeapp.o(.revsh_text), (4 bytes).
+    Removing timer_ctrl.o(.rev16_text), (4 bytes).
+    Removing timer_ctrl.o(.revsh_text), (4 bytes).
+    Removing bt_control.o(.rev16_text), (4 bytes).
+    Removing bt_control.o(.revsh_text), (4 bytes).
+    Removing music.o(.rev16_text), (4 bytes).
+    Removing music.o(.revsh_text), (4 bytes).
+    Removing music.o(.constdata), (39 bytes).
+    Removing music.o(.data), (1 bytes).
+    Removing clk.o(.rev16_text), (4 bytes).
+    Removing clk.o(.revsh_text), (4 bytes).
+    Removing clk.o(i.CLK_DisableCKO), (16 bytes).
+    Removing clk.o(i.CLK_DisableModuleClock), (28 bytes).
+    Removing clk.o(i.CLK_DisableSysTick), (12 bytes).
+    Removing clk.o(i.CLK_DisableXtalRC), (16 bytes).
+    Removing clk.o(i.CLK_EnableCKO), (36 bytes).
+    Removing clk.o(i.CLK_EnableModuleClock), (28 bytes).
+    Removing clk.o(i.CLK_EnableSysTick), (64 bytes).
+    Removing clk.o(i.CLK_GetCPUFreq), (16 bytes).
+    Removing clk.o(i.CLK_GetHCLKFreq), (16 bytes).
+    Removing clk.o(i.CLK_GetHXTFreq), (28 bytes).
+    Removing clk.o(i.CLK_GetLXTFreq), (28 bytes).
+    Removing clk.o(i.CLK_Idle), (20 bytes).
+    Removing clk.o(i.CLK_PowerDown), (28 bytes).
+    Removing clk.o(i.CLK_SetModuleClock), (80 bytes).
+    Removing clk.o(i.CLK_SetSysTickClockSrc), (20 bytes).
+    Removing clk.o(i.CLK_SysTickDelay), (36 bytes).
+    Removing fmc.o(.rev16_text), (4 bytes).
+    Removing fmc.o(.revsh_text), (4 bytes).
+    Removing fmc.o(i.FMC_Close), (16 bytes).
+    Removing fmc.o(i.FMC_GetBootSource), (20 bytes).
+    Removing fmc.o(i.FMC_GetCRC32Sum), (80 bytes).
+    Removing fmc.o(i.FMC_GetVectorPageAddr), (20 bytes).
+    Removing fmc.o(i.FMC_ReadCID), (28 bytes).
+    Removing fmc.o(i.FMC_ReadConfig), (40 bytes).
+    Removing fmc.o(i.FMC_ReadDataFlashBaseAddr), (12 bytes).
+    Removing fmc.o(i.FMC_ReadPID), (28 bytes).
+    Removing fmc.o(i.FMC_ReadUCID), (32 bytes).
+    Removing fmc.o(i.FMC_ReadUID), (28 bytes).
+    Removing fmc.o(i.FMC_SetVectorPageAddr), (24 bytes).
+    Removing fmc.o(i.FMC_WriteConfig), (64 bytes).
+    Removing gpio.o(.rev16_text), (4 bytes).
+    Removing gpio.o(.revsh_text), (4 bytes).
+    Removing gpio.o(i.GPIO_DisableInt), (28 bytes).
+    Removing gpio.o(i.GPIO_EnableInt), (26 bytes).
+    Removing pwm.o(.rev16_text), (4 bytes).
+    Removing pwm.o(.revsh_text), (4 bytes).
+    Removing pwm.o(i.PWM_ClearADCTriggerFlag), (36 bytes).
+    Removing pwm.o(i.PWM_ClearCenterIntFlag), (16 bytes).
+    Removing pwm.o(i.PWM_ClearDutyIntFlag), (16 bytes).
+    Removing pwm.o(i.PWM_ClearFaultBrakeFlag), (12 bytes).
+    Removing pwm.o(i.PWM_ClearFaultBrakeIntFlag), (12 bytes).
+    Removing pwm.o(i.PWM_ClearPeriodIntFlag), (16 bytes).
+    Removing pwm.o(i.PWM_ClearRiseIntFlag), (16 bytes).
+    Removing pwm.o(i.PWM_ConfigOutputChannel), (244 bytes).
+    Removing pwm.o(i.PWM_DisableADCTrigger), (36 bytes).
+    Removing pwm.o(i.PWM_DisableCenterInt), (20 bytes).
+    Removing pwm.o(i.PWM_DisableDeadZone), (20 bytes).
+    Removing pwm.o(i.PWM_DisableDutyInt), (14 bytes).
+    Removing pwm.o(i.PWM_DisableFaultBrakeInt), (20 bytes).
+    Removing pwm.o(i.PWM_DisableOutput), (16 bytes).
+    Removing pwm.o(i.PWM_DisablePeriodInt), (12 bytes).
+    Removing pwm.o(i.PWM_DisableRiseInt), (14 bytes).
+    Removing pwm.o(i.PWM_EnableADCTrigger), (48 bytes).
+    Removing pwm.o(i.PWM_EnableCenterInt), (36 bytes).
+    Removing pwm.o(i.PWM_EnableDeadZone), (40 bytes).
+    Removing pwm.o(i.PWM_EnableDutyInt), (14 bytes).
+    Removing pwm.o(i.PWM_EnableFaultBrake), (16 bytes).
+    Removing pwm.o(i.PWM_EnableFaultBrakeInt), (20 bytes).
+    Removing pwm.o(i.PWM_EnableOutput), (16 bytes).
+    Removing pwm.o(i.PWM_EnablePeriodInt), (12 bytes).
+    Removing pwm.o(i.PWM_EnableRiseInt), (14 bytes).
+    Removing pwm.o(i.PWM_ForceStop), (44 bytes).
+    Removing pwm.o(i.PWM_GetADCTriggerFlag), (40 bytes).
+    Removing pwm.o(i.PWM_GetCenterIntFlag), (24 bytes).
+    Removing pwm.o(i.PWM_GetDutyIntFlag), (24 bytes).
+    Removing pwm.o(i.PWM_GetFaultBrakeIntFlag), (16 bytes).
+    Removing pwm.o(i.PWM_GetPeriodIntFlag), (20 bytes).
+    Removing pwm.o(i.PWM_GetRiseIntFlag), (24 bytes).
+    Removing pwm.o(i.PWM_Start), (44 bytes).
+    Removing pwm.o(i.PWM_Stop), (30 bytes).
+    Removing sys.o(.rev16_text), (4 bytes).
+    Removing sys.o(.revsh_text), (4 bytes).
+    Removing sys.o(i.SYS_ClearResetSrc), (12 bytes).
+    Removing sys.o(i.SYS_DisableBOD), (22 bytes).
+    Removing sys.o(i.SYS_EnableBOD), (36 bytes).
+    Removing sys.o(i.SYS_GetBODStatus), (12 bytes).
+    Removing sys.o(i.SYS_GetResetSrc), (8 bytes).
+    Removing sys.o(i.SYS_IsRegLocked), (24 bytes).
+    Removing sys.o(i.SYS_ReadPDID), (8 bytes).
+    Removing sys.o(i.SYS_ResetCPU), (14 bytes).
+    Removing sys.o(i.SYS_ResetChip), (14 bytes).
+    Removing sys.o(i.SYS_ResetModule), (28 bytes).
+    Removing timer.o(.rev16_text), (4 bytes).
+    Removing timer.o(.revsh_text), (4 bytes).
+    Removing timer.o(i.TIMER_Close), (8 bytes).
+    Removing timer.o(i.TIMER_Delay), (168 bytes).
+    Removing timer.o(i.TIMER_DisableCapture), (10 bytes).
+    Removing timer.o(i.TIMER_DisableEventCounter), (12 bytes).
+    Removing timer.o(i.TIMER_EnableCapture), (22 bytes).
+    Removing timer.o(i.TIMER_EnableEventCounter), (22 bytes).
+    Removing uart.o(.rev16_text), (4 bytes).
+    Removing uart.o(.revsh_text), (4 bytes).
+    Removing uart.o(i.UART_ClearIntFlag), (44 bytes).
+    Removing uart.o(i.UART_Close), (6 bytes).
+    Removing uart.o(i.UART_DisableFlowCtrl), (12 bytes).
+    Removing uart.o(i.UART_DisableInt), (8 bytes).
+    Removing uart.o(i.UART_EnableFlowCtrl), (38 bytes).
+    Removing uart.o(i.UART_EnableInt), (8 bytes).
+    Removing uart.o(i.UART_Read), (44 bytes).
+    Removing uart.o(i.UART_SelectIrDAMode), (120 bytes).
+    Removing uart.o(i.UART_SelectRS485Mode), (20 bytes).
+    Removing uart.o(i.UART_SetLine_Config), (136 bytes).
+    Removing uart.o(i.UART_Write), (44 bytes).
+    Removing retarget.o(.rev16_text), (4 bytes).
+    Removing retarget.o(.revsh_text), (4 bytes).
+    Removing retarget.o(i.GetChar), (20 bytes).
+    Removing retarget.o(i.IsDebugFifoEmpty), (16 bytes).
+    Removing retarget.o(i.SendChar), (8 bytes).
+    Removing retarget.o(i._ttywrch), (8 bytes).
+    Removing retarget.o(i.fgetc), (8 bytes).
+    Removing retarget.o(i.kbhit), (16 bytes).
+    Removing retarget.o(.data), (4 bytes).
+    Removing system_mini58series.o(.rev16_text), (4 bytes).
+    Removing system_mini58series.o(.revsh_text), (4 bytes).
+    Removing system_mini58series.o(i.SystemInit), (2 bytes).
+
+150 unused section(s) (total 3130 bytes) removed from the image.
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000000
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x0000752c, Max: 0x00008000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x000074a8, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000c0   Data   RO         1741    RESET               startup_mini58series.o
+    0x000000c0   0x00000008   Code   RO         1841  * !!!main             c_p.l(__main.o)
+    0x000000c8   0x00000002   Code   RO         1829    .ARM.Collect$$_printf_percent$$00000000  c_p.l(_printf_percent.o)
+    0x000000ca   0x0000000a   Code   RO         1828    .ARM.Collect$$_printf_percent$$0000000C  c_p.l(_printf_x.o)
+    0x000000d4   0x00000004   Code   RO         1861    .ARM.Collect$$_printf_percent$$00000017  c_p.l(_printf_percent_end.o)
+    0x000000d8   0x00000002   Code   RO         1951    .ARM.Collect$$libinit$$00000000  c_p.l(libinit.o)
+    0x000000da   0x00000000   Code   RO         1863    .ARM.Collect$$libinit$$00000002  c_p.l(libinit2.o)
+    0x000000da   0x00000000   Code   RO         1865    .ARM.Collect$$libinit$$00000004  c_p.l(libinit2.o)
+    0x000000da   0x00000000   Code   RO         1868    .ARM.Collect$$libinit$$0000000A  c_p.l(libinit2.o)
+    0x000000da   0x00000000   Code   RO         1870    .ARM.Collect$$libinit$$0000000C  c_p.l(libinit2.o)
+    0x000000da   0x00000004   Code   RO         1871    .ARM.Collect$$libinit$$0000000D  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1872    .ARM.Collect$$libinit$$0000000E  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1875    .ARM.Collect$$libinit$$00000011  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1877    .ARM.Collect$$libinit$$00000013  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1879    .ARM.Collect$$libinit$$00000015  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1881    .ARM.Collect$$libinit$$00000017  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1883    .ARM.Collect$$libinit$$00000019  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1885    .ARM.Collect$$libinit$$0000001B  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1887    .ARM.Collect$$libinit$$0000001D  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1889    .ARM.Collect$$libinit$$0000001F  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1891    .ARM.Collect$$libinit$$00000021  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1893    .ARM.Collect$$libinit$$00000023  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1895    .ARM.Collect$$libinit$$00000025  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1899    .ARM.Collect$$libinit$$0000002C  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1901    .ARM.Collect$$libinit$$0000002E  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1903    .ARM.Collect$$libinit$$00000030  c_p.l(libinit2.o)
+    0x000000de   0x00000000   Code   RO         1905    .ARM.Collect$$libinit$$00000032  c_p.l(libinit2.o)
+    0x000000de   0x00000002   Code   RO         1906    .ARM.Collect$$libinit$$00000033  c_p.l(libinit2.o)
+    0x000000e0   0x00000002   Code   RO         1994    .ARM.Collect$$libshutdown$$00000000  c_p.l(libshutdown.o)
+    0x000000e2   0x00000000   Code   RO         2010    .ARM.Collect$$libshutdown$$00000002  c_p.l(libshutdown2.o)
+    0x000000e2   0x00000000   Code   RO         2012    .ARM.Collect$$libshutdown$$00000004  c_p.l(libshutdown2.o)
+    0x000000e2   0x00000000   Code   RO         2015    .ARM.Collect$$libshutdown$$00000007  c_p.l(libshutdown2.o)
+    0x000000e2   0x00000000   Code   RO         2018    .ARM.Collect$$libshutdown$$0000000A  c_p.l(libshutdown2.o)
+    0x000000e2   0x00000000   Code   RO         2020    .ARM.Collect$$libshutdown$$0000000C  c_p.l(libshutdown2.o)
+    0x000000e2   0x00000000   Code   RO         2023    .ARM.Collect$$libshutdown$$0000000F  c_p.l(libshutdown2.o)
+    0x000000e2   0x00000002   Code   RO         2024    .ARM.Collect$$libshutdown$$00000010  c_p.l(libshutdown2.o)
+    0x000000e4   0x00000000   Code   RO         1852    .ARM.Collect$$rtentry$$00000000  c_p.l(__rtentry.o)
+    0x000000e4   0x00000000   Code   RO         1909    .ARM.Collect$$rtentry$$00000002  c_p.l(__rtentry2.o)
+    0x000000e4   0x00000006   Code   RO         1921    .ARM.Collect$$rtentry$$00000004  c_p.l(__rtentry4.o)
+    0x000000ea   0x00000000   Code   RO         1911    .ARM.Collect$$rtentry$$00000009  c_p.l(__rtentry2.o)
+    0x000000ea   0x00000004   Code   RO         1912    .ARM.Collect$$rtentry$$0000000A  c_p.l(__rtentry2.o)
+    0x000000ee   0x00000000   Code   RO         1914    .ARM.Collect$$rtentry$$0000000C  c_p.l(__rtentry2.o)
+    0x000000ee   0x00000008   Code   RO         1915    .ARM.Collect$$rtentry$$0000000D  c_p.l(__rtentry2.o)
+    0x000000f6   0x00000002   Code   RO         1958    .ARM.Collect$$rtexit$$00000000  c_p.l(rtexit.o)
+    0x000000f8   0x00000000   Code   RO         1978    .ARM.Collect$$rtexit$$00000002  c_p.l(rtexit2.o)
+    0x000000f8   0x00000004   Code   RO         1979    .ARM.Collect$$rtexit$$00000003  c_p.l(rtexit2.o)
+    0x000000fc   0x00000006   Code   RO         1980    .ARM.Collect$$rtexit$$00000004  c_p.l(rtexit2.o)
+    0x00000102   0x00000002   PAD
+    0x00000104   0x0000001c   Code   RO         1651    .emb_text           retarget.o
+    0x00000120   0x00000038   Code   RO         1830    .emb_text           c_p.l(rand.o)
+    0x00000158   0x0000002c   Code   RO         1742  * .text               startup_mini58series.o
+    0x00000184   0x0000001c   Code   RO         1783    .text               c_p.l(noretval__2printf.o)
+    0x000001a0   0x00000058   Code   RO         1790    .text               c_p.l(_printf_hex_int.o)
+    0x000001f8   0x0000010e   Code   RO         1816    .text               c_p.l(__printf_wp.o)
+    0x00000306   0x00000002   PAD
+    0x00000308   0x0000003c   Code   RO         1831    .text               c_p.l(rand.o)
+    0x00000344   0x0000015a   Code   RO         1835    .text               c_p.l(aeabi_sdiv.o)
+    0x0000049e   0x00000006   Code   RO         1839    .text               c_p.l(heapauxi.o)
+    0x000004a4   0x000000b0   Code   RO         1857    .text               c_p.l(_printf_intcommon.o)
+    0x00000554   0x00000028   Code   RO         1859    .text               c_p.l(_printf_char_file.o)
+    0x0000057c   0x00000030   Code   RO         1925    .text               c_p.l(_printf_char_common.o)
+    0x000005ac   0x0000003e   Code   RO         1931    .text               c_p.l(sys_stackheap_outer.o)
+    0x000005ea   0x00000010   Code   RO         1936    .text               c_p.l(exit.o)
+    0x000005fa   0x00000002   PAD
+    0x000005fc   0x00000008   Code   RO         1954    .text               c_p.l(libspace.o)
+    0x00000604   0x0000000c   Code   RO         1972    .text               c_p.l(sys_exit.o)
+    0x00000610   0x00000002   Code   RO         1974    .text               c_p.l(use_no_semi.o)
+    0x00000612   0x00000000   Code   RO         1976    .text               c_p.l(indicate_semi.o)
+    0x00000612   0x00000002   PAD
+    0x00000614   0x0000002c   Code   RO            3    i.All_Color         normal_display.o
+    0x00000640   0x0000001c   Code   RO            4    i.All_Off           normal_display.o
+    0x0000065c   0x000000bc   Code   RO          731    i.BT_Power_Control  bt_control.o
+    0x00000718   0x000000ac   Code   RO          732    i.BT_Work_Detect    bt_control.o
+    0x000007c4   0x000001cc   Code   RO            5    i.Blink             normal_display.o
+    0x00000990   0x0000007c   Code   RO            6    i.Blue_Flash        normal_display.o
+    0x00000a0c   0x00000010   Code   RO          894    i.CLK_DisablePLL    clk.o
+    0x00000a1c   0x00000214   Code   RO          899    i.CLK_EnablePLL     clk.o
+    0x00000c30   0x00000018   Code   RO          901    i.CLK_EnableXtalRC  clk.o
+    0x00000c48   0x00000058   Code   RO         1551    i.CLK_GetPLLClockFreq  uart.o
+    0x00000ca0   0x000000d0   Code   RO          631    i.CLK_Init          mcu_config.o
+    0x00000d70   0x00000084   Code   RO          908    i.CLK_SetCoreClock  clk.o
+    0x00000df4   0x00000024   Code   RO          909    i.CLK_SetHCLK       clk.o
+    0x00000e18   0x00000028   Code   RO          913    i.CLK_WaitClockReady  clk.o
+    0x00000e40   0x00000440   Code   RO          441    i.CSR1010_Process   data_process.o
+    0x00001280   0x000002e4   Code   RO            7    i.Color_Show        normal_display.o
+    0x00001564   0x000004ec   Code   RO          442    i.Color_Value_Get   data_process.o
+    0x00001a50   0x000000c4   Code   RO          702    i.Count_Down_Control  timer_ctrl.o
+    0x00001b14   0x00000064   Code   RO          357    i.Csr1010_Rcv_Byte  csr1010.o
+    0x00001b78   0x00000054   Code   RO          358    i.Csr1010_Rcv_Data  csr1010.o
+    0x00001bcc   0x00000090   Code   RO          359    i.Csr1010_Snd_Data  csr1010.o
+    0x00001c5c   0x00000040   Code   RO          443    i.Data_Process      data_process.o
+    0x00001c9c   0x000000c8   Code   RO            8    i.Direct_Set        normal_display.o
+    0x00001d64   0x00000030   Code   RO         1040    i.FMC_Erase         fmc.o
+    0x00001d94   0x00000010   Code   RO         1044    i.FMC_Open          fmc.o
+    0x00001da4   0x0000001c   Code   RO         1045    i.FMC_Read          fmc.o
+    0x00001dc0   0x0000001c   Code   RO         1053    i.FMC_Write         fmc.o
+    0x00001ddc   0x000000c8   Code   RO          561    i.Flash_Read_Data   flash_prgrm.o
+    0x00001ea4   0x000000d4   Code   RO          562    i.Flash_Write_Data  flash_prgrm.o
+    0x00001f78   0x00000534   Code   RO            9    i.Flower_Bloom      normal_display.o
+    0x000024ac   0x0000006c   Code   RO          632    i.GPIO_Init         mcu_config.o
+    0x00002518   0x0000002e   Code   RO         1167    i.GPIO_SetMode      gpio.o
+    0x00002546   0x00000002   PAD
+    0x00002548   0x0000007c   Code   RO           10    i.Green_Flash       normal_display.o
+    0x000025c4   0x00000028   Code   RO         1653    i.Hard_Fault_Handler  retarget.o
+    0x000025ec   0x00000016   Code   RO          444    i.Hex_To_Char       data_process.o
+    0x00002602   0x00000002   PAD
+    0x00002604   0x00000120   Code   RO           11    i.Horse_Whole_Test  normal_display.o
+    0x00002724   0x000002a0   Code   RO           12    i.Instead           normal_display.o
+    0x000029c4   0x000000d0   Code   RO          499    i.Led_Display       display_ctrl.o
+    0x00002a94   0x00000678   Code   RO          601    i.Led_Update        led_class.o
+    0x0000310c   0x0000006c   Code   RO          633    i.MCU_Config        mcu_config.o
+    0x00003178   0x00000128   Code   RO          762    i.Music_DO          music.o
+    0x000032a0   0x000000a0   Code   RO          763    i.Music_FA          music.o
+    0x00003340   0x000000c0   Code   RO          764    i.Music_LA          music.o
+    0x00003400   0x000000d8   Code   RO          765    i.Music_MI          music.o
+    0x000034d8   0x00000144   Code   RO          766    i.Music_Mode        music.o
+    0x0000361c   0x0000009c   Code   RO          767    i.Music_RE          music.o
+    0x000036b8   0x00000098   Code   RO          768    i.Music_SO          music.o
+    0x00003750   0x00000154   Code   RO          769    i.Music_XI          music.o
+    0x000038a4   0x00000044   Code   RO          445    i.Password_Process  data_process.o
+    0x000038e8   0x00000310   Code   RO           13    i.Polar_Light       normal_display.o
+    0x00003bf8   0x0000007c   Code   RO           14    i.Red_Flash         normal_display.o
+    0x00003c74   0x000001d8   Code   RO           15    i.Ripple            normal_display.o
+    0x00003e4c   0x000003c0   Code   RO           16    i.Roll              normal_display.o
+    0x0000420c   0x0000001c   Code   RO          563    i.SYS_UnlockReg     flash_prgrm.o
+    0x00004228   0x000001ec   Code   RO           17    i.Sea_Wave          normal_display.o
+    0x00004414   0x00000020   Code   RO         1656    i.SendChar_ToUART   retarget.o
+    0x00004434   0x000000b4   Code   RO          213    i.Show_1            show_1.o
+    0x000044e8   0x0000015c   Code   RO          214    i.Show_1_0          show_1.o
+    0x00004644   0x000002d8   Code   RO          215    i.Show_1_1          show_1.o
+    0x0000491c   0x00000194   Code   RO          216    i.Show_1_2          show_1.o
+    0x00004ab0   0x00000320   Code   RO          217    i.Show_1_3          show_1.o
+    0x00004dd0   0x000000c8   Code   RO          257    i.Show_2            show_2.o
+    0x00004e98   0x000002d8   Code   RO          258    i.Show_2_0          show_2.o
+    0x00005170   0x00000248   Code   RO          259    i.Show_2_1          show_2.o
+    0x000053b8   0x00000368   Code   RO          260    i.Show_2_2          show_2.o
+    0x00005720   0x0000043c   Code   RO          261    i.Show_2_3          show_2.o
+    0x00005b5c   0x00000138   Code   RO          262    i.Show_2_4          show_2.o
+    0x00005c94   0x000000c4   Code   RO          307    i.Show_3            show_3.o
+    0x00005d58   0x00000340   Code   RO          308    i.Show_3_0          show_3.o
+    0x00006098   0x00000594   Code   RO          309    i.Show_3_1          show_3.o
+    0x0000662c   0x00000164   Code   RO          310    i.Show_3_2          show_3.o
+    0x00006790   0x00000240   Code   RO          311    i.Show_3_3          show_3.o
+    0x000069d0   0x000002c0   Code   RO          312    i.Show_3_4          show_3.o
+    0x00006c90   0x000001c0   Code   RO           18    i.Sparkle           normal_display.o
+    0x00006e50   0x0000006c   Code   RO           19    i.Steady            normal_display.o
+    0x00006ebc   0x00000060   Code   RO          446    i.Syn_Process       data_process.o
+    0x00006f1c   0x000000a0   Code   RO         1748    i.SystemCoreClockUpdate  system_mini58series.o
+    0x00006fbc   0x00000058   Code   RO         1495    i.TIMER_GetModuleClock  timer.o
+    0x00007014   0x00000050   Code   RO         1496    i.TIMER_Open        timer.o
+    0x00007064   0x00000008   Code   RO          360    i.UART0_IRQHandler  csr1010.o
+    0x0000706c   0x00000080   Code   RO         1558    i.UART_Open         uart.o
+    0x000070ec   0x00000016   Code   RO         1563    i.UART_SetTimeoutCnt  uart.o
+    0x00007102   0x00000002   PAD
+    0x00007104   0x00000030   Code   RO          361    i.Uart_Clear_Buf    csr1010.o
+    0x00007134   0x00000134   Code   RO          447    i.User_Data_Init    data_process.o
+    0x00007268   0x0000001a   Code   RO          115    i.__ARM_common_switch8  normal_display.o
+    0x00007282   0x0000000e   Code   RO         1818    i._is_digit         c_p.l(__printf_wp.o)
+    0x00007290   0x00000006   Code   RO         1658    i.ferror            retarget.o
+    0x00007296   0x0000000c   Code   RO         1660    i.fputc             retarget.o
+    0x000072a2   0x00000002   PAD
+    0x000072a4   0x00000080   Code   RO          676    i.main              showhomeapp.o
+    0x00007324   0x000000a8   Code   RO         1662    i.stackDump         retarget.o
+    0x000073cc   0x00000036   Data   RO          448    .constdata          data_process.o
+    0x00007402   0x0000007b   Data   RO          770    .constdata          music.o
+    0x0000747d   0x00000028   Data   RO         1791    .constdata          c_p.l(_printf_hex_int.o)
+    0x000074a5   0x00000003   PAD
+    0x000074a8   0x00000000   Data   RO         2025    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000828, Max: 0x00001000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000011   Data   RW          363    .data               csr1010.o
+    0x20000011   0x00000013   Data   RW          449    .data               data_process.o
+    0x20000024   0x00000006   Data   RW          506    .data               display_ctrl.o
+    0x2000002a   0x00000001   Data   RW          507    .data               display_ctrl.o
+    0x2000002b   0x00000001   Data   RW          508    .data               display_ctrl.o
+    0x2000002c   0x00000001   Data   RW          509    .data               display_ctrl.o
+    0x2000002d   0x00000001   Data   RW          510    .data               display_ctrl.o
+    0x2000002e   0x00000001   Data   RW          511    .data               display_ctrl.o
+    0x2000002f   0x00000001   Data   RW          512    .data               display_ctrl.o
+    0x20000030   0x00000001   Data   RW          513    .data               display_ctrl.o
+    0x20000031   0x00000001   Data   RW          514    .data               display_ctrl.o
+    0x20000032   0x00000001   Data   RW          515    .data               display_ctrl.o
+    0x20000033   0x00000001   Data   RW          516    .data               display_ctrl.o
+    0x20000034   0x00000001   Data   RW          517    .data               display_ctrl.o
+    0x20000035   0x00000001   Data   RW          518    .data               display_ctrl.o
+    0x20000036   0x00000001   Data   RW          519    .data               display_ctrl.o
+    0x20000037   0x00000001   Data   RW          520    .data               display_ctrl.o
+    0x20000038   0x00000001   Data   RW          521    .data               display_ctrl.o
+    0x20000039   0x00000001   Data   RW          522    .data               display_ctrl.o
+    0x2000003a   0x00000001   Data   RW          523    .data               display_ctrl.o
+    0x2000003b   0x00000001   Data   RW          524    .data               display_ctrl.o
+    0x2000003c   0x00000001   Data   RW          526    .data               display_ctrl.o
+    0x2000003d   0x00000001   Data   RW          527    .data               display_ctrl.o
+    0x2000003e   0x00000002   Data   RW          528    .data               display_ctrl.o
+    0x20000040   0x00000001   Data   RW          529    .data               display_ctrl.o
+    0x20000041   0x00000001   PAD
+    0x20000042   0x00000002   Data   RW          531    .data               display_ctrl.o
+    0x20000044   0x00000002   Data   RW          532    .data               display_ctrl.o
+    0x20000046   0x00000002   Data   RW          534    .data               display_ctrl.o
+    0x20000048   0x00000002   Data   RW          535    .data               display_ctrl.o
+    0x2000004a   0x00000001   Data   RW          536    .data               display_ctrl.o
+    0x2000004b   0x00000001   Data   RW          564    .data               flash_prgrm.o
+    0x2000004c   0x00000001   Data   RW          634    .data               mcu_config.o
+    0x2000004d   0x00000001   PAD
+    0x2000004e   0x0000000a   Data   RW          703    .data               timer_ctrl.o
+    0x20000058   0x0000000b   Data   RW          733    .data               bt_control.o
+    0x20000063   0x00000001   PAD
+    0x20000064   0x0000000c   Data   RW          772    .data               music.o
+    0x20000070   0x00000004   Data   RW         1663    .data               retarget.o
+    0x20000074   0x00000004   Data   RW         1750    .data               system_mini58series.o
+    0x20000078   0x0000000c   Data   RW         1751    .data               system_mini58series.o
+    0x20000084   0x0000001d   Zero   RW          362    .bss                csr1010.o
+    0x200000a1   0x00000030   Zero   RW          500    .bss                display_ctrl.o
+    0x200000d1   0x00000030   Zero   RW          501    .bss                display_ctrl.o
+    0x20000101   0x00000030   Zero   RW          502    .bss                display_ctrl.o
+    0x20000131   0x00000030   Zero   RW          503    .bss                display_ctrl.o
+    0x20000161   0x00000030   Zero   RW          504    .bss                display_ctrl.o
+    0x20000191   0x00000030   Zero   RW          505    .bss                display_ctrl.o
+    0x200001c1   0x0000031e   Zero   RW          602    .bss                led_class.o
+    0x200004df   0x00000001   PAD
+    0x200004e0   0x000000e4   Zero   RW         1832    .bss                c_p.l(rand.o)
+    0x200005c4   0x00000060   Zero   RW         1955    .bss                c_p.l(libspace.o)
+    0x20000624   0x00000004   PAD
+    0x20000628   0x00000000   Zero   RW         1740    HEAP                startup_mini58series.o
+    0x20000628   0x00000200   Zero   RW         1739    STACK               startup_mini58series.o
+

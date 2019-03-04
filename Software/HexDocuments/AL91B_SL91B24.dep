@@ -1,0 +1,496 @@
+Dependencies for Project 'AL91B', Target 'SL91B24': (DO NOT MODIFY !)
+F (..\AL91Pulic\Normal_Display.c)(0x5C734EDF)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\normal_display.o --omf_browse ..\hexdocuments\normal_display.crf --depend ..\hexdocuments\normal_display.d)
+I (..\Public\PublicInc\Display_Ctrl.h)(0x5C3D928D)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+I (..\Public\PublicInc\Led_Class.h)(0x5C773A6E)
+I (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)
+I (..\Public\PublicInc\Data_Process.h)(0x5BD9ABF4)
+I (..\Public\PublicInc\Flash_Prgrm.h)(0x5B62719D)
+I (..\Public\PublicInc\Timer_Ctrl.h)(0x5B62719D)
+I (..\Public\PublicInc\CSR1010.h)(0x5C70FC03)
+I (..\Public\PublicInc\BT_Control.h)(0x5B62719D)
+I (..\Public\PublicInc\Music.h)(0x5C4194A1)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+F (..\AL91Pulic\Show_1.c)(0x5BDF376A)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\show_1.o --omf_browse ..\hexdocuments\show_1.crf --depend ..\hexdocuments\show_1.d)
+I (..\Public\PublicInc\Display_Ctrl.h)(0x5C3D928D)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+I (..\Public\PublicInc\Led_Class.h)(0x5C773A6E)
+I (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)
+I (..\Public\PublicInc\Data_Process.h)(0x5BD9ABF4)
+I (..\Public\PublicInc\Flash_Prgrm.h)(0x5B62719D)
+I (..\Public\PublicInc\Timer_Ctrl.h)(0x5B62719D)
+I (..\Public\PublicInc\CSR1010.h)(0x5C70FC03)
+I (..\Public\PublicInc\BT_Control.h)(0x5B62719D)
+I (..\Public\PublicInc\Music.h)(0x5C4194A1)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+F (..\AL91Pulic\Show_2.c)(0x5BDF3785)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\show_2.o --omf_browse ..\hexdocuments\show_2.crf --depend ..\hexdocuments\show_2.d)
+I (..\Public\PublicInc\Display_Ctrl.h)(0x5C3D928D)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+I (..\Public\PublicInc\Led_Class.h)(0x5C773A6E)
+I (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)
+I (..\Public\PublicInc\Data_Process.h)(0x5BD9ABF4)
+I (..\Public\PublicInc\Flash_Prgrm.h)(0x5B62719D)
+I (..\Public\PublicInc\Timer_Ctrl.h)(0x5B62719D)
+I (..\Public\PublicInc\CSR1010.h)(0x5C70FC03)
+I (..\Public\PublicInc\BT_Control.h)(0x5B62719D)
+I (..\Public\PublicInc\Music.h)(0x5C4194A1)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+F (..\AL91Pulic\Show_3.c)(0x5BDF3798)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\show_3.o --omf_browse ..\hexdocuments\show_3.crf --depend ..\hexdocuments\show_3.d)
+I (..\Public\PublicInc\Display_Ctrl.h)(0x5C3D928D)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+I (..\Public\PublicInc\Led_Class.h)(0x5C773A6E)
+I (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)
+I (..\Public\PublicInc\Data_Process.h)(0x5BD9ABF4)
+I (..\Public\PublicInc\Flash_Prgrm.h)(0x5B62719D)
+I (..\Public\PublicInc\Timer_Ctrl.h)(0x5B62719D)
+I (..\Public\PublicInc\CSR1010.h)(0x5C70FC03)
+I (..\Public\PublicInc\BT_Control.h)(0x5B62719D)
+I (..\Public\PublicInc\Music.h)(0x5C4194A1)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+F (.\PrivateInc\Type_Private.h)(0x5B62719D)()
+F (..\Public\PublicSrc\CSR1010.c)(0x5C70FBF8)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\csr1010.o --omf_browse ..\hexdocuments\csr1010.crf --depend ..\hexdocuments\csr1010.d)
+I (..\Public\PublicInc\CSR1010.h)(0x5C70FC03)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+F (..\Public\PublicSrc\Data_Process.c)(0x5C7748C3)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\data_process.o --omf_browse ..\hexdocuments\data_process.crf --depend ..\hexdocuments\data_process.d)
+I (..\Public\PublicInc\Data_Process.h)(0x5BD9ABF4)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+I (..\Public\PublicInc\Flash_Prgrm.h)(0x5B62719D)
+I (..\Public\PublicInc\Display_Ctrl.h)(0x5C3D928D)
+I (..\Public\PublicInc\Led_Class.h)(0x5C773A6E)
+I (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Public\PublicInc\Music.h)(0x5C4194A1)
+I (..\Public\PublicInc\Timer_Ctrl.h)(0x5B62719D)
+I (..\Public\PublicInc\CSR1010.h)(0x5C70FC03)
+I (..\Public\PublicInc\BT_Control.h)(0x5B62719D)
+F (..\Public\PublicSrc\Display_Ctrl.c)(0x5C7350B4)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\display_ctrl.o --omf_browse ..\hexdocuments\display_ctrl.crf --depend ..\hexdocuments\display_ctrl.d)
+I (..\Public\PublicInc\Display_Ctrl.h)(0x5C3D928D)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+I (..\Public\PublicInc\Led_Class.h)(0x5C773A6E)
+I (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)
+I (..\Public\PublicInc\Data_Process.h)(0x5BD9ABF4)
+I (..\Public\PublicInc\Flash_Prgrm.h)(0x5B62719D)
+I (..\Public\PublicInc\Timer_Ctrl.h)(0x5B62719D)
+I (..\Public\PublicInc\CSR1010.h)(0x5C70FC03)
+I (..\Public\PublicInc\BT_Control.h)(0x5B62719D)
+I (..\Public\PublicInc\Music.h)(0x5C4194A1)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+F (..\Public\PublicSrc\Flash_Prgrm.c)(0x5C70C41C)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\flash_prgrm.o --omf_browse ..\hexdocuments\flash_prgrm.crf --depend ..\hexdocuments\flash_prgrm.d)
+I (..\Public\PublicInc\Flash_Prgrm.h)(0x5B62719D)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+I (..\Public\PublicInc\Display_Ctrl.h)(0x5C3D928D)
+I (..\Public\PublicInc\Led_Class.h)(0x5C773A6E)
+I (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)
+I (..\Public\PublicInc\Data_Process.h)(0x5BD9ABF4)
+I (..\Public\PublicInc\CSR1010.h)(0x5C70FC03)
+I (..\Public\PublicInc\Timer_Ctrl.h)(0x5B62719D)
+I (..\Public\PublicInc\BT_Control.h)(0x5B62719D)
+I (..\Public\PublicInc\Music.h)(0x5C4194A1)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+F (..\Public\PublicSrc\Led_Class.c)(0x5C773A5F)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\led_class.o --omf_browse ..\hexdocuments\led_class.crf --depend ..\hexdocuments\led_class.d)
+I (..\Public\PublicInc\Led_Class.h)(0x5C773A6E)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+I (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)
+F (..\Public\PublicSrc\MCU_Config.c)(0x5C458CB7)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\mcu_config.o --omf_browse ..\hexdocuments\mcu_config.crf --depend ..\hexdocuments\mcu_config.d)
+I (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+F (..\Public\PublicSrc\ShowHomeApp.c)(0x5C32B1E8)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\showhomeapp.o --omf_browse ..\hexdocuments\showhomeapp.crf --depend ..\hexdocuments\showhomeapp.d)
+I (..\Public\PublicInc\ShowHomeApp.h)(0x5B62719D)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+I (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)
+I (..\Public\PublicInc\CSR1010.h)(0x5C70FC03)
+I (..\Public\PublicInc\Data_Process.h)(0x5BD9ABF4)
+I (..\Public\PublicInc\Flash_Prgrm.h)(0x5B62719D)
+I (..\Public\PublicInc\Display_Ctrl.h)(0x5C3D928D)
+I (..\Public\PublicInc\Led_Class.h)(0x5C773A6E)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Public\PublicInc\Music.h)(0x5C4194A1)
+I (..\Public\PublicInc\Timer_Ctrl.h)(0x5B62719D)
+I (..\Public\PublicInc\BT_Control.h)(0x5B62719D)
+F (..\Public\PublicSrc\Timer_Ctrl.c)(0x5C7651FD)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\timer_ctrl.o --omf_browse ..\hexdocuments\timer_ctrl.crf --depend ..\hexdocuments\timer_ctrl.d)
+I (..\Public\PublicInc\Timer_Ctrl.h)(0x5B62719D)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+F (..\Public\PublicSrc\BT_Control.c)(0x5C6FB4CE)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\bt_control.o --omf_browse ..\hexdocuments\bt_control.crf --depend ..\hexdocuments\bt_control.d)
+I (..\Public\PublicInc\BT_Control.h)(0x5B62719D)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+I (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)
+F (..\Public\PublicSrc\Music.c)(0x5C427DE0)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\music.o --omf_browse ..\hexdocuments\music.crf --depend ..\hexdocuments\music.d)
+I (..\Public\PublicInc\Music.h)(0x5C4194A1)
+I (..\Public\PublicInc\Type_Def.h)(0x5C773D23)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+I (.\PrivateInc\Type_Private.h)(0x5B62719D)
+I (..\Public\PublicInc\Led_Class.h)(0x5C773A6E)
+I (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)
+I (..\Public\PublicInc\Display_Ctrl.h)(0x5C3D928D)
+I (..\Public\PublicInc\Data_Process.h)(0x5BD9ABF4)
+I (..\Public\PublicInc\Flash_Prgrm.h)(0x5B62719D)
+I (..\Public\PublicInc\Timer_Ctrl.h)(0x5B62719D)
+I (..\Public\PublicInc\CSR1010.h)(0x5C70FC03)
+I (..\Public\PublicInc\BT_Control.h)(0x5B62719D)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+F (..\Public\PublicInc\CSR1010.h)(0x5C70FC03)()
+F (..\Public\PublicInc\Data_Process.h)(0x5BD9ABF4)()
+F (..\Public\PublicInc\Display_Ctrl.h)(0x5C3D928D)()
+F (..\Public\PublicInc\Flash_Prgrm.h)(0x5B62719D)()
+F (..\Public\PublicInc\Led_Class.h)(0x5C773A6E)()
+F (..\Public\PublicInc\MCU_Config.h)(0x5C4276E0)()
+F (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)()
+F (..\Public\PublicInc\ShowHomeApp.h)(0x5B62719D)()
+F (..\Public\PublicInc\Timer_Ctrl.h)(0x5B62719D)()
+F (..\Public\PublicInc\Type_Def.h)(0x5C773D23)()
+F (..\Public\PublicInc\BT_Control.h)(0x5B62719D)()
+F (..\Public\PublicInc\Music.h)(0x5C4194A1)()
+F (..\FwLib\inc\clk.h)(0x5B62719D)()
+F (..\FwLib\inc\fmc.h)(0x5B62719D)()
+F (..\FwLib\inc\gpio.h)(0x5B62719D)()
+F (..\FwLib\inc\pwm.h)(0x5B62719D)()
+F (..\FwLib\inc\sys.h)(0x5B62719D)()
+F (..\FwLib\inc\timer.h)(0x5B62719D)()
+F (..\FwLib\inc\uart.h)(0x5B62719D)()
+F (..\FwLib\src\clk.c)(0x5B62719D)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\clk.o --omf_browse ..\hexdocuments\clk.crf --depend ..\hexdocuments\clk.d)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+F (..\FwLib\src\fmc.c)(0x5B62719D)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\fmc.o --omf_browse ..\hexdocuments\fmc.crf --depend ..\hexdocuments\fmc.d)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+F (..\FwLib\src\gpio.c)(0x5B62719D)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\gpio.o --omf_browse ..\hexdocuments\gpio.crf --depend ..\hexdocuments\gpio.d)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+F (..\FwLib\src\pwm.c)(0x5B62719D)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\pwm.o --omf_browse ..\hexdocuments\pwm.crf --depend ..\hexdocuments\pwm.d)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+F (..\FwLib\src\sys.c)(0x5B62719D)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\sys.o --omf_browse ..\hexdocuments\sys.crf --depend ..\hexdocuments\sys.d)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+F (..\FwLib\src\timer.c)(0x5B62719D)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\timer.o --omf_browse ..\hexdocuments\timer.crf --depend ..\hexdocuments\timer.d)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+F (..\FwLib\src\uart.c)(0x5BD9D2C6)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\uart.o --omf_browse ..\hexdocuments\uart.crf --depend ..\hexdocuments\uart.d)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+F (RTE\Device\Mini58FDE\retarget.c)(0x5B62719D)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\retarget.o --omf_browse ..\hexdocuments\retarget.crf --depend ..\hexdocuments\retarget.d)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
+F (RTE\Device\Mini58FDE\startup_Mini58Series.s)(0x5B62719D)(--cpu Cortex-M0 -g --apcs=interwork -IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include--pd "__UVISION_VERSION SETA 521" --pd "_RTE_ SETA 1"--list .\listings\startup_mini58series.lst --xref -o ..\hexdocuments\startup_mini58series.o --depend ..\hexdocuments\startup_mini58series.d)
+F (RTE\Device\Mini58FDE\system_Mini58Series.c)(0x5B62719D)(-c --cpu Cortex-M0 -g -O3 --apcs=interwork --split_sections -I .\PrivateInc -I ..\Public\PublicInc -I ..\FwLib\inc-IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91B\RTE-IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include-IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include-D__UVISION_VERSION="521" -D_RTE_-o ..\hexdocuments\system_mini58series.o --omf_browse ..\hexdocuments\system_mini58series.crf --depend ..\hexdocuments\system_mini58series.d)
+I (C:\Keil\ARM\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\Public\PublicInc\Mini58Series.h)(0x5B62719D)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_version.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_compiler.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\cmsis_armcc.h)(0x5A0D5BFA)
+I (C:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1.1.0\Device\Mini58\Include\system_Mini58Series.h)(0x58BCCCF0)
+I (..\FwLib\inc\sys.h)(0x5B62719D)
+I (..\FwLib\inc\clk.h)(0x5B62719D)
+I (..\FwLib\inc\fmc.h)(0x5B62719D)
+I (..\FwLib\inc\gpio.h)(0x5B62719D)
+I (..\FwLib\inc\pwm.h)(0x5B62719D)
+I (..\FwLib\inc\timer.h)(0x5B62719D)
+I (..\FwLib\inc\uart.h)(0x5B62719D)
