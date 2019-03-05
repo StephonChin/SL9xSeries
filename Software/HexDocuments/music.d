@@ -1,5 +1,5 @@
-..\hexdocuments\music.o: PrivateSrc\Music.c
-..\hexdocuments\music.o: .\PrivateInc\Music.h
+..\hexdocuments\music.o: ..\Public\PublicSrc\Music.c
+..\hexdocuments\music.o: ..\Public\PublicInc\Music.h
 ..\hexdocuments\music.o: ..\Public\PublicInc\Type_Def.h
 ..\hexdocuments\music.o: ..\Public\PublicInc\Mini58Series.h
 ..\hexdocuments\music.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include\core_cm0.h
@@ -27,5 +27,4 @@
 ..\hexdocuments\music.o: ..\Public\PublicInc\CSR1010.h
 ..\hexdocuments\music.o: ..\Public\PublicInc\BT_Control.h
 ..\hexdocuments\music.o: ..\Public\PublicInc\Music.h
-..\hexdocuments\music.o: .\PrivateInc\Key.h
 ..\hexdocuments\music.o: C:\Keil\ARM\ARM\ARMCC\Bin\..\include\stdlib.h

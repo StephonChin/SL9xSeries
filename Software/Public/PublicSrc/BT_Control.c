@@ -122,11 +122,12 @@ static void BT_Power_Control(void)
 				BtPowerInitFlag = FALSE;
 				BtTime = 0;
 				GPIO_SetMode(P1, GP_PIN_PIN2_Msk | GP_PIN_PIN3_Msk, GPIO_MODE_INPUT);
-				#if AL91 | AL92 | AL_CURTAIN
-        PORT_BT_CE = RESET;
-        #else
+				
+			#if AL91 | AL92
+				PORT_BT_CE = RESET;
+			#else
 				PORT_BT_CE = SET;
-        #endif
+			#endif
 			}
 			
 			BtTime++;
@@ -143,11 +144,11 @@ static void BT_Power_Control(void)
 		{
 				BtPowerInitFlag = FALSE;
 				BtTime = 0;
-        #if AL91 | AL92 | AL_CURTAIN
-        PORT_BT_CE = SET;
-        #else
+			#if AL91 | AL92 | AL_CURTAIN
+				PORT_BT_CE = SET;
+			#else
 				PORT_BT_CE = RESET;
-        #endif
+			#endif
 				BtConStatus = BT_IDLE;
 				SYS->P1_MFP &= ~(SYS_MFP_P12_Msk | SYS_MFP_P13_Msk);
 				SYS->P1_MFP |= (SYS_MFP_P12_GPIO | SYS_MFP_P13_GPIO);
@@ -155,23 +156,22 @@ static void BT_Power_Control(void)
 				PORT_TX = RESET;
 		} break;
 		
+		
 		case BT_RESTART:
 		{
-			#if AL96
-			if (SleepFlag == TRUE)
-			{
-				break;
-			}
-			#endif
+			BtConStatus = BT_IDLE;
+			break;
+			
+			
 			if (BtPowerInitFlag == TRUE)
 			{
 				BtPowerInitFlag = FALSE;
 				BtTime = 0;
-        #if AL91 | AL92 | AL_CURTAIN
-        PORT_BT_CE = SET;
-        #else
+			#if AL91 | AL92 | AL_CURTAIN
+				PORT_BT_CE = SET;
+			#else
 				PORT_BT_CE = RESET;
-        #endif
+			#endif
 				SYS->P1_MFP &= ~(SYS_MFP_P12_Msk | SYS_MFP_P13_Msk);
 				SYS->P1_MFP |= (SYS_MFP_P12_GPIO | SYS_MFP_P13_GPIO);
 				PORT_RX = RESET;

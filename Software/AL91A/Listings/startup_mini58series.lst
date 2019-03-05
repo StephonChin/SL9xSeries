@@ -272,11 +272,11 @@ ARM Macro Assembler    Page 5
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
 ork --depend=..\hexdocuments\startup_mini58series.d -o..\hexdocuments\startup_m
-ini58series.o -IH:\Willis\ShowLights\ShowHomeApp\2.0\2.3.0\AL91A\RTE -IC:\Keil\
-ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include -IC:\Keil\ARM\PACK\Nuvoton\NuMicro_DFP\1
-.1.0\Device\Mini58\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISI
-ON_VERSION SETA 521" --predefine="_RTE_ SETA 1" --list=.\listings\startup_mini5
-8series.lst RTE\Device\Mini58FDE\startup_Mini58Series.s
+ini58series.o -I"H:\Willis\ShowLights\HolidayShowHome-SL9x Series\Software\AL91
+A\RTE" -IC:\Keil\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\Include -IC:\Keil\ARM\PACK\Nuvo
+ton\NuMicro_DFP\1.1.0\Device\Mini58\Include --predefine="__MICROLIB SETA 1" --p
+redefine="__UVISION_VERSION SETA 521" --predefine="_RTE_ SETA 1" --list=.\listi
+ngs\startup_mini58series.lst RTE\Device\Mini58FDE\startup_Mini58Series.s
 
 
 

@@ -726,7 +726,7 @@ static void CSR1010_Process(void)
 	BtRcvDataFlag	= TRUE;
 
 	// CSR1010 Initialize
-	if (BtInitFlag == FALSE)
+	//if (BtInitFlag == FALSE)
 	{
 		if (RcvData.DataBuf[0] == 0xF0)
 		{

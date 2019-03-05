@@ -27,4 +27,3 @@
 ..\hexdocuments\data_process.o: ..\Public\PublicInc\Timer_Ctrl.h
 ..\hexdocuments\data_process.o: ..\Public\PublicInc\CSR1010.h
 ..\hexdocuments\data_process.o: ..\Public\PublicInc\BT_Control.h
-..\hexdocuments\data_process.o: .\PrivateInc\Key.h
