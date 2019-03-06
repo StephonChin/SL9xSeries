@@ -9,6 +9,7 @@
 
   <project>
     <PathAndName>.\AL91A\AL91A.uvprojx</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
     <NodeIsCheckedInBatchBuild>1</NodeIsCheckedInBatchBuild>
   </project>
 
@@ -37,7 +38,6 @@
 
   <project>
     <PathAndName>.\AL94-24V3\AL94-24V3.uvprojx</PathAndName>
-    <NodeIsActive>1</NodeIsActive>
     <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 

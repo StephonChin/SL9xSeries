@@ -32,9 +32,10 @@ void BT_Work_Detect(void);
 
 
 //-----------------------< Exported Parameters >---------------------//
-extern _TypeBtCon			BtConStatus;
-extern _Flag					BtRcvDataFlag;
-extern _Flag					BtPowerInitFlag;
+extern _TypeBtCon	BtConStatus;
+extern _Flag		BtRcvDataFlag;
+extern _Flag		BtPowerInitFlag;
+extern _Flag 		BtPowerDetFlag;
 
 
 //-----------------------< File Parameters >------------------------//

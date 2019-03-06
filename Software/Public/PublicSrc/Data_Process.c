@@ -726,30 +726,37 @@ static void CSR1010_Process(void)
 	BtRcvDataFlag	= TRUE;
 
 	// CSR1010 Initialize
-	//if (BtInitFlag == FALSE)
+	if (RcvData.DataBuf[0] == 0xF0)
 	{
-		if (RcvData.DataBuf[0] == 0xF0)
-		{
-			SndData.SndStatus	= SND_TYPE;
-			SndData.DataBuf[0]	= 0x01;
-			SndData.DataBuf[1]	= DEVICE_NAME_ONE;
-			SndData.DataBuf[2]	= DEVICE_NAME_TWO;
-			SndData.DataBuf[3]	= DEVICE_NUM;
+		BtPowerDetFlag = TRUE;
+		
+		SndData.SndStatus	= SND_TYPE;
+		SndData.DataBuf[0]	= 0x01;
+		SndData.DataBuf[1]	= DEVICE_NAME_ONE;
+		SndData.DataBuf[2]	= DEVICE_NAME_TWO;
+		SndData.DataBuf[3]	= DEVICE_NUM;
 
-		#if AL91 | AL94
-			SndData.DataBuf[4]  = HorseOrder;
-			SndData.DataBuf[5]  = HorseTotal;
-			
-		#else
-			SndData.DataBuf[4]	= TimerData.CntDwnHour;
-			SndData.DataBuf[5]	= 0;
-      
-		#endif /* #if HORSE_ENABLE */
+	#if AL91 | AL94
+		SndData.DataBuf[4]  = HorseOrder;
+		SndData.DataBuf[5]  = HorseTotal;
+		
+	#else
+		
+		SndData.DataBuf[4]	= TimerData.CntDwnHour;
+		SndData.DataBuf[5]	= 0;
+  
+	#endif /* #if HORSE_ENABLE */
 
-			SndData.DataBuf[6]	= ChkSumH;
-			SndData.DataBuf[7]	= ChkSumL;
-			return;
-		}
+		SndData.DataBuf[6]	= ChkSumH;
+		SndData.DataBuf[7]	= ChkSumL;
+		return;
+	}
+	
+	//Bluetooth is OTAing
+	if (RcvData.DataBuf[0] == 0xE0)
+	{
+		BtPowerDetFlag = FALSE;
+		return;
 	}
 
 	/* CheckSum
@@ -823,8 +830,8 @@ static void CSR1010_Process(void)
 			if (RcvData.DataBuf[2] > 0x1C)										break;
 
 			// Get the mode value
-			DisplayData.Mode				= RcvData.DataBuf[1];
-			DisplayData.InitFlag 		= TRUE;
+			DisplayData.Mode		= RcvData.DataBuf[1];
+			DisplayData.InitFlag	= TRUE;
 			switch (DisplayData.Mode)
 			{
 				case 0x0:
@@ -834,18 +841,18 @@ static void CSR1010_Process(void)
 
 				case 0xFF:
 				{
-					DisplayData.Mode 		= DisplayData.ModeBuf;
+					DisplayData.Mode = DisplayData.ModeBuf;
 				} break;
 
 				default:
 				{
 					// Get the color
-					DisplayData.ColorValue 		= RcvData.DataBuf[2];
+					DisplayData.ColorValue= RcvData.DataBuf[2];
 					Color_Value_Get(DisplayData.ColorValue);
 
 					// Save
-					DisplayData.ModeBuf 		= DisplayData.Mode;
-					FlashSaveFlag						= TRUE;
+					DisplayData.ModeBuf = DisplayData.Mode;
+					FlashSaveFlag = TRUE;
 
 				} break;
 			}
@@ -881,7 +888,7 @@ static void CSR1010_Process(void)
 					HorseTotal = 0;
 
 					DisplayData.Mode 		= 0xFD;
-					DisplayData.InitFlag 	= TRUE;
+					DisplayData.InitFlag	= TRUE;
 					FlashSaveFlag			= TRUE;
 				} break;
 
@@ -895,7 +902,7 @@ static void CSR1010_Process(void)
 						break;
 					}
 					HorseTotal = RcvData.DataBuf[2];
-					DisplayData.Mode 			= 0xFE;
+					DisplayData.Mode		= 0xFE;
 					DisplayData.InitFlag 	= TRUE;
 				} break;
 
@@ -903,9 +910,9 @@ static void CSR1010_Process(void)
 				case 0x3:
 				{
 					HorseOrder = RcvData.DataBuf[2];
-					DisplayData.Mode 			= 0xFD;
+					DisplayData.Mode		= 0xFD;
 					DisplayData.InitFlag 	= TRUE;
-					FlashSaveFlag					= TRUE;
+					FlashSaveFlag			= TRUE;
 				} break;
 
 				/* Set horse total number and save the data */
@@ -1471,32 +1478,28 @@ void Color_Value_Get(_Uint8 ColorNumBuf)
 						ColorData[TempCnt][2] = COLOR_VECTOR[GREEN][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[GREEN][3];
 					}
-					else
-					if ((TempCnt % 5) == 1)
+					else if ((TempCnt % 5) == 1)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[RED][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[RED][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[RED][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[RED][3];
 					}
-					else
-					if ((TempCnt % 5) == 2)
+					else if ((TempCnt % 5) == 2)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[WHITE][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[WHITE][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[WHITE][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[WHITE][3];
 					}
-					else
-					if ((TempCnt % 5) == 3)
+					else if ((TempCnt % 5) == 3)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[DARK_GREEN][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[DARK_GREEN][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[DARK_GREEN][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[DARK_GREEN][3];
 					}
-					else
-					if ((TempCnt % 5) == 4)
+					else if ((TempCnt % 5) == 4)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[COLD_WHITE][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[COLD_WHITE][1];
@@ -1578,24 +1581,21 @@ void Color_Value_Get(_Uint8 ColorNumBuf)
 						ColorData[TempCnt][2] = COLOR_VECTOR[RED][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[RED][3];
 					}
-					else
-					if (TempCnt % 4 == 1)
+					else if (TempCnt % 4 == 1)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[BLUE][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[BLUE][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[BLUE][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[BLUE][3];
 					}
-					else
-					if (TempCnt % 4 == 2)
+					else if (TempCnt % 4 == 2)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[COLD_WHITE][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[COLD_WHITE][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[COLD_WHITE][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[COLD_WHITE][3];
 					}
-					else
-					if (TempCnt % 4 == 3)
+					else if (TempCnt % 4 == 3)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[BLUE][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[BLUE][1];
@@ -1615,8 +1615,7 @@ void Color_Value_Get(_Uint8 ColorNumBuf)
 						ColorData[TempCnt][2] = COLOR_VECTOR[RED][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[RED][3];
 					}
-					else
-					if (TempCnt % 2 == 1)
+					else if (TempCnt % 2 == 1)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[COLD_WHITE][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[COLD_WHITE][1];
@@ -1639,32 +1638,28 @@ void Color_Value_Get(_Uint8 ColorNumBuf)
 						ColorData[TempCnt][2] = COLOR_VECTOR[SPRING_GREEN][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[SPRING_GREEN][3];
 					}
-					else
-					if ((TempCnt % 5) == 1)
+					else if ((TempCnt % 5) == 1)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[ORANGE][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[ORANGE][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[ORANGE][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[ORANGE][3];
 					}
-					else
-					if ((TempCnt % 5) == 2)
+					else if ((TempCnt % 5) == 2)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[LAWN_GREEN][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[LAWN_GREEN][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[LAWN_GREEN][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[LAWN_GREEN][3];
 					}
-					else
-					if ((TempCnt % 5) == 3)
+					else if ((TempCnt % 5) == 3)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[RED][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[RED][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[RED][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[RED][3];
 					}
-					else
-					if ((TempCnt % 5) == 4)
+					else if ((TempCnt % 5) == 4)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[GOLD][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[GOLD][1];
@@ -1686,16 +1681,14 @@ void Color_Value_Get(_Uint8 ColorNumBuf)
 						ColorData[TempCnt][2] = COLOR_VECTOR[GREEN][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[GREEN][3];
 					}
-					else
-					if ((TempCnt % 4) == 1)
+					else if ((TempCnt % 4) == 1)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[SPRING_GREEN][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[SPRING_GREEN][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[SPRING_GREEN][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[SPRING_GREEN][3];
 					}
-					else
-					if ((TempCnt % 4) == 2)
+					else if ((TempCnt % 4) == 2)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[DARK_GREEN][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[DARK_GREEN][1];
@@ -1724,64 +1717,56 @@ void Color_Value_Get(_Uint8 ColorNumBuf)
 						ColorData[TempCnt][2] = COLOR_VECTOR[ORANGE][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[ORANGE][3];
 					}
-					else
-					if ((TempCnt % 9) == 1)
+					else if ((TempCnt % 9) == 1)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[PURPLE][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[PURPLE][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[PURPLE][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[PURPLE][3];
 					}
-					else
-					if ((TempCnt % 9) == 2)
+					else if ((TempCnt % 9) == 2)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[DARK_GREEN][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[DARK_GREEN][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[DARK_GREEN][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[DARK_GREEN][3];
 					}
-					else
-					if ((TempCnt % 9) == 3)
+					else if ((TempCnt % 9) == 3)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[DARK_RED][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[DARK_RED][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[DARK_RED][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[DARK_RED][3];
 					}
-					else
-					if ((TempCnt % 9) == 4)
+					else if ((TempCnt % 9) == 4)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[PURPLE][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[PURPLE][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[PURPLE][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[PURPLE][3];
 					}
-					else
-					if ((TempCnt % 9) == 5)
+					else if ((TempCnt % 9) == 5)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[GREEN][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[GREEN][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[GREEN][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[GREEN][3];
 					}
-					else
-					if ((TempCnt % 9) == 6)
+					else if ((TempCnt % 9) == 6)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[PURPLE][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[PURPLE][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[PURPLE][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[PURPLE][3];
 					}
-					else
-					if ((TempCnt % 9) == 7)
+					else if ((TempCnt % 9) == 7)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[DARK_GREEN][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[DARK_GREEN][1];
 						ColorData[TempCnt][2] = COLOR_VECTOR[DARK_GREEN][2];
 						ColorData[TempCnt][3] = COLOR_VECTOR[DARK_GREEN][3];
 					}
-					else
-					if ((TempCnt % 9) == 8)
+					else if ((TempCnt % 9) == 8)
 					{
 						ColorData[TempCnt][0] = COLOR_VECTOR[DARK_RED][0];
 						ColorData[TempCnt][1] = COLOR_VECTOR[DARK_RED][1];

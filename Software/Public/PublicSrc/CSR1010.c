@@ -16,9 +16,9 @@
 /* <-------------Gloable Variables-------------------> */
 _TypeStructRcv 	RcvData;
 _TypeStructSnd 	SndData;
-_Flag						RcvFlag;
-_Uint8					SynData[5];										/* send synchronization data buffer 		*/
-_Uint8					ChkSumReply[4];
+_Flag			RcvFlag;
+_Uint8			SynData[5];										/* send synchronization data buffer 		*/
+_Uint8			ChkSumReply[4];
 
 
 /* <-------------File Variables----------------------> */
@@ -84,7 +84,7 @@ static void Csr1010_Rcv_Byte(void)
 			/* Power On Command Received : FD F0 FE */
 			case 0x2:
 			{
-				if (RcvBuffer[0] == 0xFD && RcvBuffer[1] == 0xF0 && RcvBuffer[2] == 0xFE)
+				if (RcvBuffer[0] == 0xFD && RcvBuffer[2] == 0xFE)
 				{
 					RcvByteStatus = RCV_END;
 				}

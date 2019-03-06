@@ -10,8 +10,9 @@
 
 //------------------------< Gloable Parameters >-----------------------------//
 _TypeBtCon	BtConStatus;
-_Flag				BtRcvDataFlag;
-_Flag				BtPowerInitFlag;
+_Flag		BtRcvDataFlag;
+_Flag		BtPowerInitFlag;
+_Flag 		BtPowerDetFlag = FALSE;
 
 
 /**
@@ -19,83 +20,63 @@ _Flag				BtPowerInitFlag;
 	*/
 void BT_Work_Detect(void)
 {
-	static _Uint8		PIO11_HighTime[2];
-	static _Uint8		PIO11_LowTime[2];
+	static _Uint16		PIO11_HighTime;
+	static _Uint16		PIO11_LowTime;
+//	static _Uint16		BtRcvDataTime;
 	
-	static _Uint8		BtRcvDataTime[3];
+	//Control the BT power
+	BT_Power_Control();
+	
+	//Detect the PWM signal after received the command "FD F0 FE"
+	if (!BtPowerDetFlag)
+	{
+		PIO11_HighTime = 0;
+		PIO11_LowTime = 0;
+		return;
+	}
 	
 	// Detect the PIO11:it should be ouput PWM wave
 	// 6s H + 6sL
 	if (PORT_BT_DT == SET)
 	{
-		PIO11_LowTime[0] = 0;
-		PIO11_LowTime[1] = 0;
-		
-		PIO11_HighTime[0]++;
-		if (PIO11_HighTime[0] >= 50)			//20ms * 50 = 1s
+		PIO11_LowTime = 0;
+
+		PIO11_HighTime++;
+		if (PIO11_HighTime >= 500)			//20ms * 500 = 10s
 		{	
-			PIO11_HighTime[0] = 0;
-			PIO11_HighTime[1]++;
-			if (PIO11_HighTime[1] >= 10)		//10s
-			{
-				PIO11_HighTime[1] = 0;
-				BtConStatus 		= BT_RESTART;
-				BtPowerInitFlag = TRUE;
-			}
+			PIO11_HighTime  = 0;
+			BtConStatus 	= BT_RESTART;
+			BtPowerInitFlag = TRUE;
 		}
 	}
 	else
 	{
-		PIO11_HighTime[0] = 0;
-		PIO11_HighTime[1] = 0;
+		PIO11_HighTime = 0;
 		
-		PIO11_LowTime[0]++;
-		if (PIO11_LowTime[0] >= 50)			//20ms * 50 = 1s
+		PIO11_LowTime++;
+		if (PIO11_LowTime >= 500)			//20ms * 500 = 10s
 		{	
-			PIO11_LowTime[0] = 0;
-			PIO11_LowTime[1]++;
-			if (PIO11_LowTime[1] >= 10)		//10s
-			{
-				PIO11_LowTime[1] = 0;
-				BtConStatus 		= BT_RESTART;
-				BtPowerInitFlag = TRUE;
-			}
-		}
-	}
-	
-	
-	
+			PIO11_LowTime = 0;
 
-	// if the bluetooth haven't receive command without 1hour, restart it.
-	if (BtRcvDataFlag == TRUE)
-	{
-		BtRcvDataFlag = FALSE;
-		BtRcvDataTime[0] = 0;
-		BtRcvDataTime[1] = 0;
-		BtRcvDataTime[2] = 0;
-	}
-	
-	BtRcvDataTime[0]++;
-	if (BtRcvDataTime[0] >= 50)	//20 * 50 = 1s
-	{
-		BtRcvDataTime[0] = 0;
-		BtRcvDataTime[1]++;
-		if (BtRcvDataTime[1] >= 60)		//1min
-		{
-			BtRcvDataTime[1] = 0;
-			BtRcvDataTime[2]++;
-			if (BtRcvDataTime[2] >= 60)		//1hour
-			{
-				BtRcvDataTime[2] = 0;
-				BtConStatus 		= BT_RESTART;
-				BtPowerInitFlag = TRUE;
-			}
+			BtConStatus 	= BT_RESTART;
+			BtPowerInitFlag = TRUE;
 		}
 	}
 	
-	
-	//Control the BT power
-	BT_Power_Control();
+//	// if the bluetooth haven't receive command without 1hour, restart it.
+//	if (BtRcvDataFlag == TRUE)
+//	{
+//		BtRcvDataFlag = FALSE;
+//		BtRcvDataTime = 0;
+//	}
+//	
+//	BtRcvDataTime++;
+//	if (BtRcvDataTime >= 15000)	//20 * 15000 = 5minute
+//	{
+//		BtRcvDataTime = 0;
+//		BtConStatus 	= BT_RESTART;
+//		BtPowerInitFlag = TRUE;
+//	}
 }
 
 
@@ -159,10 +140,6 @@ static void BT_Power_Control(void)
 		
 		case BT_RESTART:
 		{
-			BtConStatus = BT_IDLE;
-			break;
-			
-			
 			if (BtPowerInitFlag == TRUE)
 			{
 				BtPowerInitFlag = FALSE;
