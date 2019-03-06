@@ -406,8 +406,8 @@ void Data_Process(void)
 /************************************************************
 	*
 	* @FunctonName	Key_Process
-	* @Brief				Process the key
-	* 							Change the color and mode after short key
+	* @Brief		Process the key
+	* 				Change the color and mode after short key
 	*/
 #if AL99 | AL94
 static void Key_Process(void)

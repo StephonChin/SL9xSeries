@@ -52,7 +52,7 @@
 
 #define		MODE_MAX						0xD
 
-#define		CUSTOM_MAX						5
+#define		CUSTOM_MAX						20
 
 //typedefine-------------------------------------
 typedef struct CUSTOM_Type

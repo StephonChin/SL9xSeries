@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\HexDocuments\AL91A-48.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\HexDocuments\AL91A-48.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Tue Mar 05 15:16:20 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Wed Mar 06 15:48:16 2019
 <BR><P>
 <H3>Maximum Stack Usage =        132 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -321,7 +321,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_Display
 </UL>
 
-<P><STRONG><a name="[2d]"></a>BT_Work_Detect</STRONG> (Thumb, 164 bytes, Stack size 16 bytes, bt_control.o(i.BT_Work_Detect))
+<P><STRONG><a name="[2d]"></a>BT_Work_Detect</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, bt_control.o(i.BT_Work_Detect))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = BT_Work_Detect &rArr; BT_Power_Control &rArr; GPIO_SetMode
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BT_Power_Control
@@ -968,7 +968,7 @@ Local Symbols
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCU_Config
 </UL>
 
-<P><STRONG><a name="[2b]"></a>BT_Power_Control</STRONG> (Thumb, 120 bytes, Stack size 24 bytes, bt_control.o(i.BT_Power_Control))
+<P><STRONG><a name="[2b]"></a>BT_Power_Control</STRONG> (Thumb, 166 bytes, Stack size 24 bytes, bt_control.o(i.BT_Power_Control))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = BT_Power_Control &rArr; GPIO_SetMode
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetMode
@@ -976,7 +976,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BT_Work_Detect
 </UL>
 
-<P><STRONG><a name="[3b]"></a>CSR1010_Process</STRONG> (Thumb, 1282 bytes, Stack size 72 bytes, data_process.o(i.CSR1010_Process))
+<P><STRONG><a name="[3b]"></a>CSR1010_Process</STRONG> (Thumb, 1302 bytes, Stack size 72 bytes, data_process.o(i.CSR1010_Process))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = CSR1010_Process &rArr; Color_Value_Get &rArr; __aeabi_uidivmod
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hex_To_Char
@@ -1011,7 +1011,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Data_Process
 </UL>
 
-<P><STRONG><a name="[77]"></a>Csr1010_Rcv_Byte</STRONG> (Thumb, 88 bytes, Stack size 12 bytes, csr1010.o(i.Csr1010_Rcv_Byte))
+<P><STRONG><a name="[77]"></a>Csr1010_Rcv_Byte</STRONG> (Thumb, 82 bytes, Stack size 12 bytes, csr1010.o(i.Csr1010_Rcv_Byte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = Csr1010_Rcv_Byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IRQHandler

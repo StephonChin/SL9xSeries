@@ -26,4 +26,5 @@
 ..\hexdocuments\display_ctrl.o: ..\Public\PublicInc\CSR1010.h
 ..\hexdocuments\display_ctrl.o: ..\Public\PublicInc\BT_Control.h
 ..\hexdocuments\display_ctrl.o: ..\Public\PublicInc\Music.h
+..\hexdocuments\display_ctrl.o: .\PrivateInc\Key.h
 ..\hexdocuments\display_ctrl.o: C:\Keil\ARM\ARM\ARMCC\Bin\..\include\stdlib.h

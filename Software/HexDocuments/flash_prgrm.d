@@ -26,4 +26,5 @@
 ..\hexdocuments\flash_prgrm.o: ..\Public\PublicInc\Timer_Ctrl.h
 ..\hexdocuments\flash_prgrm.o: ..\Public\PublicInc\BT_Control.h
 ..\hexdocuments\flash_prgrm.o: ..\Public\PublicInc\Music.h
+..\hexdocuments\flash_prgrm.o: .\PrivateInc\Key.h
 ..\hexdocuments\flash_prgrm.o: C:\Keil\ARM\ARM\ARMCC\Bin\..\include\stdlib.h

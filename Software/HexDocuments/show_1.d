@@ -1,4 +1,4 @@
-..\hexdocuments\show_1.o: ..\AL91Pulic\Show_1.c
+..\hexdocuments\show_1.o: PrivateSrc\Show_1.c
 ..\hexdocuments\show_1.o: ..\Public\PublicInc\Display_Ctrl.h
 ..\hexdocuments\show_1.o: ..\Public\PublicInc\Type_Def.h
 ..\hexdocuments\show_1.o: ..\Public\PublicInc\Mini58Series.h
@@ -26,4 +26,5 @@
 ..\hexdocuments\show_1.o: ..\Public\PublicInc\CSR1010.h
 ..\hexdocuments\show_1.o: ..\Public\PublicInc\BT_Control.h
 ..\hexdocuments\show_1.o: ..\Public\PublicInc\Music.h
+..\hexdocuments\show_1.o: .\PrivateInc\Key.h
 ..\hexdocuments\show_1.o: C:\Keil\ARM\ARM\ARMCC\Bin\..\include\stdlib.h

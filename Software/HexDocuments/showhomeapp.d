@@ -28,3 +28,4 @@
 ..\hexdocuments\showhomeapp.o: ..\Public\PublicInc\Display_Ctrl.h
 ..\hexdocuments\showhomeapp.o: ..\Public\PublicInc\Timer_Ctrl.h
 ..\hexdocuments\showhomeapp.o: ..\Public\PublicInc\BT_Control.h
+..\hexdocuments\showhomeapp.o: .\PrivateInc\Key.h
